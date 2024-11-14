@@ -31,22 +31,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Je website
+ https://bashva.github.io/blokwebwebsite/
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.ah.nl
+  https://www.ah.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Homepage / startpagina 
-  <img src="![image](https://github.com/user-attachments/assets/c0e007ec-169c-454d-bdbf-22d2ad08086f)
-" width="375px" alt="homepagina ah">
+  hier de naam van de pagina  
+  <img src="readme-images/ahhome.png" width="375px" alt="Schermafbeelding van homescherm van ah.nl">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Detailpagina melk
-  <img src="![image](https://github.com/user-attachments/assets/1b4d7605-fb7a-4908-9d60-a0e1493dcf9f)
-" width="375px" alt="detail pagina melk ah">
+  hier de naam van de pagina  
+  <img src="readme-images/productinfo.png" width="375px" alt="Schermafbeelding van productinformatie van ah.nl">
  
 </details>
 
@@ -59,6 +58,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  Menu pagina:
+  -Screenreader noemt alle dingen die in de website naar voren moeten komen op. 
+  -Was voor mij allemaal vrij helder om de menu pagina met de screenreader te gebruiken.
+
+  Restaurant pagina:
+  -Screenreader leest alle onderdelen goed voor en snapt ook dat de screenreader bij afbeeldingen uitleg geeft.
+   Zo wordt de ALT bij vrijwel elke afbeelding ook voorgelezen.
+  -Was voor mij allemaal vrij helder om de menu pagina met de screenreader te gebruiken.
+
+
+  WCAG CHECKLIST: (VOOR AH.NL)
+
+Algemeen
+  HTML-validatie: De HTML-code bevat geen fouten.
+  Alt-teksten: Alle afbeeldingen hebben bijbehorende goede alt-teksten.
+  Focusstijl: Interactieve elementen hebben een zichtbare en duidelijke focusstijl.
+  Toetsenbordnavigatie: Over het algemeen werkt de toetsenbordnavigatie goed, maar sommige menu-opties zijn lastig te bereiken met alleen het toetsenbord.
+
+Problemen
+  Logische heading-structuur: Niet alle koppen staan in de juiste volgorde, wat het lastig maakt om de website met een screenreader te gebruiken.
+  Decoratieve afbeeldingen: Sommige afbeeldingen die een decoratief doel hebben, worden onnodig voorgelezen.
+  Formuliervelden: Een paar invoervelden missen duidelijke labels, wat verwarrend is voor de screenreader.
+  Skip-links: De skip-link is aanwezig, maar niet altijd goed zichtbaar.
+  Contrastproblemen: Sommige teksten hebben te weinig kleurcontrast, vooral blauwe tekst op een witte achtergrond.
+
+Verbeterpunten
+  Heading-structuur: Koppen moeten logische geordend zijn.
+  Alt-attributen: Lege alt voor decoratie afbeeldingen
+  Labels voor invoervelden: Duidelijke labels aan formulieren. 
+  Kleurcontrast: Kleuren aanpassen naar toegankelijkheid.
 
 </details>
 
