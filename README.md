@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.ah.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Homepage / startpagina 
   <img src="![image](https://github.com/user-attachments/assets/c0e007ec-169c-454d-bdbf-22d2ad08086f)
 " width="375px" alt="homepagina ah">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Detailpagina melk
   <img src="![image](https://github.com/user-attachments/assets/1b4d7605-fb7a-4908-9d60-a0e1493dcf9f)
 " width="375px" alt="detail pagina melk ah">
  
