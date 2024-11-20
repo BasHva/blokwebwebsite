@@ -41,7 +41,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/ahhomepage.png" width="375px" alt="Schermafbeelding van homescherm van ah.nl">
+  <img src="readme-images/homepaginaah.png" width="375px" alt="Schermafbeelding van homescherm van ah.nl">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
@@ -59,14 +59,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-  Menu pagina:
+  Homepagina:
   -Screenreader noemt alle dingen die in de website naar voren moeten komen op. 
-  -Was voor mij allemaal vrij helder om de menu pagina met de screenreader te gebruiken.
+  -Was voor mij allemaal vrij helder om de homepagina met de screenreader te gebruiken.
 
-  Restaurant pagina:
+  Productpagina:
   -Screenreader leest alle onderdelen goed voor en snapt ook dat de screenreader bij afbeeldingen uitleg geeft.
-   Zo wordt de ALT bij vrijwel elke afbeelding ook voorgelezen.
-  -Was voor mij allemaal vrij helder om de menu pagina met de screenreader te gebruiken.
+   Zo wordt de ALT ook goed gebruikt en voorgelezen.
+  -Was voor mij allemaal vrij helder om de product pagina met de screenreader te gebruiken.
 
 
   WCAG CHECKLIST: (VOOR AH.NL)
@@ -100,13 +100,15 @@ Verbeterpunten
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Breakdown schets.png" width="375px" alt="breakdown van de homepagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/homepagina hamburgermenu en zoekbalk.png" width="375px" alt="Hamburgermenu ingeklapt">
+  <img src="readme-images/uitgeklaptehamburgermenu.png" width="375px" alt="Hamburgermenu uitgeklapt">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/homepagina hamburgermenu en zoekbalk.png" width="375px" alt="Zichtbare zoekbalk">
+  <img src="readme-images/ingeklaptezoekbalk.png" width="375px" alt="Zoekbalk ingeklapt">
 
 </details>
 
@@ -120,18 +122,27 @@ Verbeterpunten
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img src="readme-images/lastigecode.png" width="375px" alt="Lastig stukje code">
+  <img src="readme-images/lastigecode1.png" width="375px" alt="Lastig stukje code 1">
+  Ik vond dit stukje code lastig, aangezien het gewoon niet werkte wat ik ook probeerde met mijn website.
+  Uiteindelijk heb ik het gedeeltelijk gefixt door mijn article te stijlen en een extra class toe te voegen.
+  Verder heb ik het voor nu maar gelaten, aangezien het belangrijker was om eerst de HTML goed op orde te hebben.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
+  
+  -Bespreken / vraag stellen over validator dat hij 8 info's aangeeft en zegt dat ik een h2 moet plaatsen
+   maar ik snap niet wat hiermee wordt bedoeld.
+   
+  -Vragen wat hieronder mee wordt bedoeld met studenten.
 
-  | student 1      | student 2          | student 3    | student 4        |
+  <!-- | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | ...            | ...                | ...          | ...              | -->
+ Snap bovenstaande niet?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
