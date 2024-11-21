@@ -140,7 +140,8 @@ Verbeterpunten
 
   -Student 2 (Maya) -> Vragen wat er in een section moet. En of het nodig is om 1 section of meerdere te maken.
 
-  -Student 3 (Jazzmine) -> 
+  -Student 3 (Jazzmine) -> Vraag of ze alle blokjes / secties op haar website moest maken die hetzelfde waren.
+  
 
   -Student 4 (Jegor) -> (Niet aanwezig bij feedbackgesprek)
 
@@ -158,7 +159,10 @@ Verbeterpunten
   -Als het titel heeft section.
   -Minder classes gebruiken.
   -Vaker voorkomt verschillende plekken class.
-  
+  -Box-shadow om header heen doen.
+  -hr tag lijn doen.
+  -Nav border bottem.
+
 </details>
 
 
