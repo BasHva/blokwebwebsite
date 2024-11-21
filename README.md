@@ -134,24 +134,31 @@ Verbeterpunten
   
   -Bespreken / vraag stellen over validator dat hij 8 info's aangeeft en zegt dat ik een h2 moet plaatsen
    maar ik snap niet wat hiermee wordt bedoeld.
-   
-  -Vragen wat hieronder mee wordt bedoeld met studenten.
 
-  <!-- | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              | -->
- Snap bovenstaande niet?
+  -Student 1 (Bas) -> Vragen stellen over validator. Hij geeft bij mij (Bas) 8 info's aan en zegt dat er h2's moeten
+  worden geplaatst.
+
+  -Student 2 (Maya) -> Vragen wat er in een section moet. En of het nodig is om 1 section of meerdere te maken.
+
+  -Student 3 (Jazzmine) -> 
+
+  -Student 4 (Jegor) -> (Niet aanwezig bij feedbackgesprek)
+
+
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  -Buttons aanpassen naar een a. Button zelfde pagina a andere pagina.
+  -Sportlife mints h3.
+  -Bekijk alle bonus link.
+  -3/4 zodat je kan schuiven.
+  -h2 onzichtbaar of div met daarin sections.
+  -Alleen voor styling kan je div gebruiken.
+  -Als het titel heeft section.
+  -Minder classes gebruiken.
+  -Vaker voorkomt verschillende plekken class.
+  
 </details>
 
 
