@@ -1,177 +1,214 @@
-  body {
+body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: #fff;
-  }
+}
 
-  .invisible {
+.invisible {
 	visibility: hidden;
 	display: none;
-  }
-  
-  
-  header {
+}
+
+header {
 	background-color: #fff;
 	padding: 1em;
-  }
-  
-  .navigation {
+}
+
+nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-  }
-  
-  .nav-left, .nav-right {
+}
+
+nav section {
 	display: flex;
 	align-items: center;
-  }
-  
-  .nav-left img, .nav-right img {
+}
+
+nav section img {
 	margin-right: 1em;
-  }
-  
-  .logo {
+}
+
+.logo {
 	max-height: 3em;
-  }
-  
-  .search {
+}
+
+.search {
 	padding: 0.5em;
 	border: 2px solid #c2c2c2;
 	border-radius: 0.5em;
 	width: 100%;
-  }
-  
-  .icon {
+}
+
+.icon {
 	width: 2.3em;
-  }
-  
-  /* Banner sectie */
-  .banner {
+}
+
+/* Banner sectie */
+.banner {
 	position: relative;
 	margin-top: 1em;
-  }
-  
-  .banner img {
+}
+
+.banner img {
 	width: 100%;
-  }
-  
-  .banner h2 {
+}
+
+.banner h2 {
 	position: absolute;
 	color: white;
 	font-size: 1.5em;
 	font-weight: bold;
 	margin: 1em;
-  }
-  
+}
+
+/* Actie-sectie */
+.actie-sectie {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.actie-sectie article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edd0d0; 
+}
+
+.actie-sectie article:first-of-type {
+    background-color: #FAF4E8; 
+}
+
+.actie-sectie article:first-of-type img {
+    height: 7em; 
+}
+
+.actie-sectie article:last-of-type {
+    background-color: #EDF6FC; 
+}
+
+.actie-sectie article:last-of-type img {
+    height: 6.5em; 
+    margin-left: -0.8em;
+}
+
+.actie-sectie article h2 {
+    font-size: 1.3em;
+    color: #333;
+    flex: 1;
+    margin-top: 1em; 
+}
+
 /* Promo sectie */
 .promo {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
 	margin: 2em 0;
-  }
-  
-  .promo-item {
+}
+
+.promo article {
 	background-color: #f2f6fc; 
 	border-radius: 8px;
 	overflow: hidden;
 	padding: 1em; 
 	display: flex;
-  }
-  
-  .promo-item img {
+}
+
+.promo img {
 	width: auto;
 	height: 100px; 
-  }
-  
-  .promo-item h2 {
+}
+
+.promo h2 {
 	font-size: 1.2em;
 	color: #333; 
-  }
+}
 
-  
-  /* Categorie sectie */
-  .category-slider {
+/* Categorie sectie */
+.category-slider {
 	display: flex;
 	gap: 1em;
 	overflow-x: auto;
-  }
-  
-  .category-item {
+}
+
+.category-slider article {
 	flex: 0 0 auto;
 	width: 250px;
 	text-align: center;
-  }
-  
-  .category-item img {
+}
+
+.category-slider img {
 	width: 100%;
 	border-radius: 8px;
-  }
-  
-  .category-item p {
+}
+
+.category-slider p {
 	font-weight: bold;
-  }
-  
-  /* Bonus sectie */
-  .bonus {
+}
+
+/* Bonus sectie */
+.bonus {
 	margin: 2em 0;
-  }
-  
-  .bonus-slider {
+}
+
+.bonus-slider {
 	display: flex;
 	gap: 1em;
 	overflow-x: auto;
-  }
-  
-  .bonus-item {
+}
+
+.bonus-slider article {
 	flex: 0 0 auto;
 	width: 250px;
 	text-align: center;
-  }
-  
-  .bonus-item img {
+}
+
+.bonus-slider img {
 	width: 100%;
 	border-radius: 8px;
-  }
-  
-  .bonus-item p {
+}
+
+.bonus-slider p {
 	font-weight: bold;
 	margin-top: 0.5em;
-  }
-  
-  /* Footer sectie */
-  footer {
+}
+
+/* Footer sectie */
+footer {
 	background-color: #2a2a2a;
 	color: white;
 	padding: 1em 0;
 	text-align: center;
-  }
-  
-  footer nav {
+}
+
+footer nav {
 	display: flex;
 	justify-content: center;
 	gap: 2em;
-  }
-  
-  footer nav a {
+}
+
+footer nav a {
 	color: white;
 	text-decoration: none;
-  }
-  
-  footer address {
+}
+
+footer address {
 	margin-top: 1em;
-  }
-  
-  footer .social-links {
+}
+
+footer .social-links {
 	display: flex;
 	justify-content: center;
 	gap: 1em;
-  }
-  
-  footer .social-links a {
+}
+
+footer .social-links a {
 	color: white;
 	text-decoration: none;
-  }
-  
+}
+
 /* Zoekbalk */
 .search {
 	font-size: 16px; 
@@ -179,71 +216,11 @@
 	outline: none; 
 	box-sizing: border-box; 
 	margin-top: 20px;
-  }
-  
-  /* ZOek stijl */
-  .search:focus {
+}
+
+.search:focus {
 	background-color: #f8f8f8;
-	border-color:#f8f8f8;;
-  }
-  
-
-  
-  
+	border-color: #f8f8f8;
+}
 
 
-/* body {
-	font-family: Arial, sans-serif;
-	background-color: #f5f5f5;
-	margin: 0;
-	padding: 0;
-  }
-  
-  main {
-	display: flex;
-	justify-content: center;
-  }
-  
-  .promo {
-	width: 88%;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-  }
-  
-  .promo article {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	height: 120px;
-	padding: 0 3em;
-  }
-  
-  .promo-item {
-	background-color: #8c8e8f; 
-  }
-  
-  .promo-item2 {
-	background-color: #d0e9fc; 
-  }
-  
-  
-  h2 {
-	font-size: 1.2em;
-	color: #333;
-	margin-left: -1.3em; 
-	margin-right: -3em; 
-	flex-grow: 1;
-  }
-  
-  .promo-item img {
-	width: 50%;
-	position: relative; 
-	left: 2em;
-  }
-
-  .promo-item2 img {
-	width: 70%;
-	position: relative; 
-	left: 3em;
-  }  */
