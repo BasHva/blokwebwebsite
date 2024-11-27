@@ -10,7 +10,9 @@ body {
 
 header {
 	background-color: #fff;
-	padding: 1em;
+	padding: 0;
+	box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.1); /* Schaduw alleen aan de onderkant */
+
 }
 
 nav {
@@ -43,6 +45,13 @@ nav section img {
 	width: 2.3em;
 }
 
+.search-divider {
+    border: none; 
+    border-top: 1px solid #e6e6e6; 
+    margin: 0.5em; 
+}
+
+
 /* Banner sectie */
 .banner {
 	position: relative;
@@ -74,6 +83,8 @@ nav section img {
     align-items: center;
     justify-content: space-between;
     background-color: #edd0d0; 
+	max-width: 95%; 
+    margin: 0 auto; 
 }
 
 .actie-sectie article:first-of-type {
@@ -81,7 +92,8 @@ nav section img {
 }
 
 .actie-sectie article:first-of-type img {
-    height: 7em; 
+    height: 6.8em; 
+    margin-right: 4em; 
 }
 
 .actie-sectie article:last-of-type {
@@ -89,15 +101,17 @@ nav section img {
 }
 
 .actie-sectie article:last-of-type img {
-    height: 6.5em; 
-    margin-left: -0.8em;
+    height: 6.5em; 	
+    margin-left: -1em; 
 }
 
 .actie-sectie article h2 {
-    font-size: 1.3em;
+    font-size: 1em;
     color: #333;
     flex: 1;
-    margin-top: 1em; 
+    margin-top: -0.3em; 
+    max-width: 50%;
+    margin-left: 1.2em; 
 }
 
 /* Promo sectie */
@@ -194,11 +208,6 @@ nav section img {
   
   .footer-socials a img {
 	height: 2em; /* Grootte van de iconen */
-	transition: transform 0.3s ease;
-  }
-  
-  .footer-socials a img:hover {
-	transform: scale(1.2); /* Vergroting bij hover */
   }
   
   /* Links */
@@ -249,9 +258,6 @@ nav section img {
 	height: 2em;
 	object-fit: contain;
   }
-  
-
-  
 
 /* Zoekbalk */
 .search {
@@ -259,12 +265,10 @@ nav section img {
 	border-radius: 50px;
 	outline: none; 
 	box-sizing: border-box; 
-	margin-top: 20px;
+	margin-top: 8px;
 }
 
 .search:focus {
 	background-color: #f8f8f8;
 	border-color: #f8f8f8;
 }
-
-
