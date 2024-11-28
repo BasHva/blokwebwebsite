@@ -11,7 +11,7 @@ body {
 header {
   background-color: #fff;
   padding: 0;
-  box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.1); /* Schaduw alleen aan de onderkant */
+  box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -53,30 +53,29 @@ nav section img {
 
 /* Zoekbalk-container */
 .search-container {
-	display: flex; /* Horizontale uitlijning */
-	align-items: center; /* Verticale centrering */
-	background-color: #f3f6f8; /* Achtergrondkleur */
-	border: none;
-	border-radius: 3em; /* Afronding van de hoeken */
-	padding: 0.2em; /* Binnenruimte rondom */
-	width: 100%; /* Volledige breedte */
-  }
-  
-  /* Icoon */
-  .icon {
-	width: 2.3em; /* Grootte van het icoon */
-	height: auto; /* Verhouding behouden */
-	margin-right: 0.5em; /* Ruimte tussen icoon en input */
-  }
-  
-  /* Zoekbalk */
-  .search {
-	border: none; /* Verwijder standaardrand */
-	outline: none; /* Verwijder blauwe focusrand */
-	background-color: transparent; /* Transparante achtergrond */
-	width: 100%; /* Vul resterende ruimte */
-  }
-  
+  display: flex;
+  align-items: center;
+  background-color: #f3f6f8;
+  border: none;
+  border-radius: 3em;
+  padding: 0.2em;
+  width: 100%;
+}
+
+/* Icoon */
+.icon {
+  width: 2.3em;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+/* Zoekbalk */
+.search {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+}
 
 /* banner */
 .banner {
@@ -164,7 +163,6 @@ nav section img {
   margin-left: 0.5em;
 }
 
-
 /* Promo sectie */
 .promo {
   display: flex;
@@ -193,25 +191,23 @@ nav section img {
 
 /* Categorie sectie */
 
-/* Zorg ervoor dat de header van de categorie flexbox gebruikt */
 .categories-header {
-	display: flex;
-	align-items: center; /* Zorg dat de teksten verticaal gecentreerd staan */
-	justify-content: space-between; /* Zet ruimte tussen H2 en H3 */
-	margin-bottom: 1em; /* Ruimte onder de header */
-  }
-  
-  .categories-header h2 {
-	font-size: 25px; /* Grotere tekst voor H2 */
-	margin: 0; /* Verwijder eventuele standaardmarges */
-  }
-  
-  .categories-header h3 {
-	font-size: 15px; /* Kleinere tekst voor H3 */
-	color: #24ade6; /* Blauwe kleur */
-	margin: 0; /* Verwijder standaardmarges */
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.categories-header h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.categories-header h3 {
+  font-size: 15px;
+  color: #24ade6;
+  margin: 0;
+}
 
 .category-slider {
   display: flex;
@@ -236,15 +232,14 @@ nav section img {
   margin-right: 6em;
 }
 
-
 /* Bonus sectie */
 .bonus {
   margin: 2em 0;
 }
 
 .BB {
-	color: chocolate;
-	font-size: 0.5em;
+  color: chocolate;
+  font-size: 0.5em;
 }
 .bonus-slider {
   display: flex;
@@ -268,20 +263,19 @@ nav section img {
   margin-top: 0.5em;
 }
 .korting {
-	background-color: chocolate;
-	font-weight: bold;
-	margin-right: 5em;
-	border-radius: 2px;
+  background-color: chocolate;
+  font-weight: bold;
+  margin-right: 5em;
+  border-radius: 2px;
 }
 .korting p {
-	color: white;
-	font-size: 1.3em;
+  color: white;
+  font-size: 1.3em;
 }
-
 
 /* Algemene footer styling */
 .footer {
-  background-color: #f5f8fa; /* Lichtgrijze achtergrond */
+  background-color: #f5f8fa;
   text-align: center;
   padding: 2em 1em;
   font-family: Arial, sans-serif;
@@ -293,18 +287,18 @@ nav section img {
   display: flex;
   justify-content: center;
   gap: 1em;
-  margin-bottom: 2em; /* Ruimte tussen iconen en links */
+  margin-bottom: 2em;
 }
 
 .footer-socials a img {
-  height: 2em; /* Grootte van de iconen */
+  height: 2em;
 }
 
 /* Links */
 .footer-links ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 2em 0; /* Ruimte tussen links en disclaimer */
+  margin: 0 0 2em 0;
   margin-left: 15%;
 }
 
@@ -322,15 +316,14 @@ nav section img {
   text-decoration: underline;
 }
 
-
 /* Disclaimer */
 .footer-disclaimer {
-  margin-bottom: 2em; /* Ruimte tussen disclaimer en betaalopties */
+  margin-bottom: 2em;
 }
 
 .footer-disclaimer img {
   display: block;
-  margin: 0 auto 0.5em auto; /* Centreer het NIX18-logo */
+  margin: 0 auto 0.5em auto;
   height: 2em;
 }
 

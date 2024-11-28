@@ -181,20 +181,21 @@ Verbeterpunten
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  -Bespreken / vraag stellen over validator dat hij 8 info's aangeeft en zegt dat ik een h2 moet plaatsen
+   maar ik snap niet wat hiermee wordt bedoeld.
 
+  -Student 1 (Bas) -> Vraag stellen over pijltje right arrow die ik niet kleiner krijgen. Ook vraag stellen over de zoekbalk wat ik er van moet maken en wat ik ervan weg kan laten. Evt nog vragen wat van de 5 extra dingen je van het lijstje moet maken of zelf verzinnen.
+
+  -Student 2 (Maya) -> Vragen wat er in een section moet. En of het nodig is om 1 section of meerdere te maken.
+
+  -Student 3 (Thijs) -> Vraag over afbeeldingen waarom ze niet werken en vraag over ./ en /.
+  
+
+  -Student 4 (Jegor) -> (Niet aanwezig bij feedbackgesprek)
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+(Hoogte utizetten en widht aanpassen. Eigenlijk altijd zelf een widht opgeven.) (In span toevoegen als after of before. h2 before geven after mdn css ::after) H2 geen flexbox of inline flexbox. details summary toevoegen voor dropdown menu. Dropdown menu uit de les helpen. Navigatie moet dropdown menu en de icons bovenin als linkjes buiten de nav. input type is search toevoegen zoekbalk. Class hoeft niet attribute selecter css input typ is search. Aatribute selecter.  Input typ is search. Prefers reduced motion. Afbeeldingen geen spatie of hoofdletters geven. Css beter ordenen.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
 
 </details>
 
