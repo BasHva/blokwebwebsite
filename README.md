@@ -8,8 +8,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Jij
 
 <details open>
@@ -28,8 +26,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Je website
  https://bashva.github.io/blokwebwebsite/
 
@@ -40,11 +36,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.ah.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Homepagina Albert Heijn
   <img src="readme-images/homepaginaah.png" width="375px" alt="Schermafbeelding van homescherm van ah.nl">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Productpagina Albert Heijn
   <img src="readme-images/ahproductpagina.png" width="375px" alt="Schermafbeelding van productinformatie van ah.nl">
  
 </details>
@@ -100,19 +96,17 @@ Verbeterpunten
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/Breakdown schets.png" width="375px" alt="breakdown van de homepagina">
+  <img src="readme-images/breakdownschets.png" width="375px" alt="breakdown van de homepagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/homepagina hamburgermenu en zoekbalk.png" width="375px" alt="Hamburgermenu ingeklapt">
+  <img src="readme-images/homepagina_menu_en_zoekbalk.png" width="375px" alt="Hamburgermenu ingeklapt">
   <img src="readme-images/uitgeklaptehamburgermenu.png" width="375px" alt="Hamburgermenu uitgeklapt">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/homepagina hamburgermenu en zoekbalk.png" width="375px" alt="Zichtbare zoekbalk">
+  <img src="readme-images/homepagina_menu_en_zoekbalk.png" width="375px" alt="Zichtbare zoekbalk">
   <img src="readme-images/ingeklaptezoekbalk.png" width="375px" alt="Zoekbalk ingeklapt">
 
 </details>
-
-
 
 
 
@@ -167,39 +161,48 @@ Verbeterpunten
 
 
 
-
-
 ## Voortgang 2 (week 3)
 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img src="readme-images/vond_lastig_arrow.png" width="375px" alt="Lastig stukje code">
+  <img src="readme-images/ging_goed_banner.png" width="375px" alt="Ging goed stukje code">
+  Het eerste stukje code had ik veel moeite mee en heb ik ook een vraag over voor bij het feedback gesprek.
+  Ik kreeg de "right arrow" niet kleiner en dat kostte me best veel moeite.
+  Het stukje wat wel goed ging was de banner goed maken. Ik kreeg de 2 banners makkelijk en goed naast elkaar
+  en dit maakte me blij, want eindelijk werkte iets hoe ik het graag had gewild.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  -Bespreken / vraag stellen over validator dat hij 8 info's aangeeft en zegt dat ik een h2 moet plaatsen
-   maar ik snap niet wat hiermee wordt bedoeld.
+  -Bespreken / vraag stellen over dat mijn right arrow / pijltje niet kleiner wordt / dat ik hem niet kleiner krijg. Ook vraag stellen over de extra dingen die je moet maken en wat ik kan weglaten / moet maken van de zoekbalk.
 
   -Student 1 (Bas) -> Vraag stellen over pijltje right arrow die ik niet kleiner krijgen. Ook vraag stellen over de zoekbalk wat ik er van moet maken en wat ik ervan weg kan laten. Evt nog vragen wat van de 5 extra dingen je van het lijstje moet maken of zelf verzinnen.
 
-  -Student 2 (Maya) -> Vragen wat er in een section moet. En of het nodig is om 1 section of meerdere te maken.
+  -Student 2 (Maya) -> Vraag over de kleur en afbeelding van de logo van de dopper site, aangezien deze niet download. Javascript vraag over code.
 
-  -Student 3 (Thijs) -> Vraag over afbeeldingen waarom ze niet werken en vraag over ./ en /.
+  -Student 3 (Thijs) -> Vraag over afbeeldingen waarom ze niet werken en vraag over wanneer en waar je ./ en /. wel of niet moet gebruiken. Kijken wat in de sections bij elkaar hoort en niet enkel richting de opmaak kijken.
   
+  -Student 4 (Jegor) -> Vraag over hoe CSS doorgepusht kan worden, aangezien dit momenteel nog niet werkt. Vragen hoe de css wel moet worden gecodeerd in de html dat het doorgepusht kan worden. Ook de vraag hoe de images van tesla kunnen worden gekopiert naar zijn eigen webpagina.
 
-  -Student 4 (Jegor) -> (Niet aanwezig bij feedbackgesprek)
+  -Student 5 (Jazzmine) -> (Later, ingedeeld in groepje van C ipv B.)
 
   ### Verslag van meeting
-(Hoogte utizetten en widht aanpassen. Eigenlijk altijd zelf een widht opgeven.) (In span toevoegen als after of before. h2 before geven after mdn css ::after) H2 geen flexbox of inline flexbox. details summary toevoegen voor dropdown menu. Dropdown menu uit de les helpen. Navigatie moet dropdown menu en de icons bovenin als linkjes buiten de nav. input type is search toevoegen zoekbalk. Class hoeft niet attribute selecter css input typ is search. Aatribute selecter.  Input typ is search. Prefers reduced motion. Afbeeldingen geen spatie of hoofdletters geven. Css beter ordenen.
-
+1. Hoogte uitzetten en breedte zelf aanpassen.  
+2. `::before` of `::after` toevoegen aan `<h2>` voor iconen of extra styling.  
+3. `<details>` en `<summary>` gebruiken voor dropdownmenu.  
+4. Dropdownmenu uit de les toepassen.  
+5. Navigatie met dropdownmenu en icons erbuiten als linkjes toevoegen.  
+6. Zoekbalk `<input type="search">` gebruiken voor semantiek.  
+7. Attribute selector gebruiken in CSS voor `<input type="search">`.  
+8. `prefers-reduced-motion` instellen voor betere toegankelijkheid.  
+9. Afbeeldingen zonder spaties of hoofdletters in bestandsnamen gebruiken.  
+10. CSS beter ordenen voor overzicht.
 
 </details>
-
-
 
 
 
@@ -212,8 +215,6 @@ Verbeterpunten
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
 </details>
-
-
 
 
 
@@ -248,8 +249,6 @@ Verbeterpunten
 
 
 
-
-
 ## Eindgesprek (week 5)
 
 <details>
@@ -270,8 +269,6 @@ Verbeterpunten
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
-
-
 
 
 
