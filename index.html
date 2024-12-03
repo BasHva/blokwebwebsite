@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Bas Witmond">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AlbertHeijn</title>
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/ahlogo.png">
+  <meta charset="UTF-8">
+  <meta name="author" content="Bas Witmond">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Albert Heijn</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/ahlogo.png">
+</head>
+<body>
 
-<h1 class="invisible">AlbertHeijn</h1>
+  <h1 class="invisible">Albert Heijn</h1>
 
-  <!-- Header -->
   <header>
     <nav class="navigation">
-      <section class="nav-left">
-        <img src="images/hamburgermenu.png" alt="Menu" class="icon">
-        <img src="images/ahlogo.png" alt="AlbertHeijn Logo" class="logo">
-      </section>
-      <section class="nav-right">
-        <img src="images/profiel.png" alt="Profiel" class="icon">
-        <img src="images/favorieten.png" alt="Favorieten" class="icon">
-        <img src="images/winkelwagen.png" alt="Winkelmandje" class="icon">
-      </section>
-    </nav>
-    <select id="menuDrop">
-      <option>menu</option>
-    </select>
-    <!-- Scheidingslijn boven de zoekbalk -->
-    <hr class="search-divider">
+      <details class="menu-dropdown">
+        <summary class="menu-toggle">
+          <img src="images/dropdownmenu.png" alt="Menu Icon" class="menu-icon">
+        </summary>
+      </details>
+      <!-- <p class="menu-text">menu</p> -->
+      
+      <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
+  
 
+    <section class="nav-right">
+      <ul class="icon-list">
+        <li><a href="#"><img src="images/profiel.png" alt="Profiel" class="icon"></a></li>
+        <li><a href="#"><img src="images/favorieten.png" alt="Favorieten" class="icon"></a></li>
+        <li><a href="#"><img src="images/winkelwagen.png" alt="Winkelmandje" class="icon"></a></li>
+      </ul>
+    </section>
+  </nav>
+  
     <!-- Zoekbalk -->
-    <div class="search-container">
-      <img src="images/zoekicoon.png" alt="Zoek icoon" class="search-icon">
-      <input type="text" placeholder="Waar ben je naar op zoek?" class="search">
-    </div>
+    <section class="search-bar">
+      <input type="text" placeholder="Waar ben je naar op zoek?" class="search-input" aria-label="Zoeken">
+      <button class="search-button"></button>
+    </section>    
   </header>
 
-  <!-- Main Content -->
   <main>
+    <!-- Banner sectie -->
     <section class="banner">
       <article>
         <h2>Alles voor het leukste feest van het jaar</h2>
@@ -49,30 +53,17 @@
       </article>
     </section>
 
+    <!-- Acties sectie -->
     <section class="actie-sectie">
       <article>
-        <h2>Een krachtig blond Belgisch bier met zachte smaak <img class="pijltje" src="images/angleright.png" alt="pijltje"></h2>
-        <img src="images/cornetbierimage.png" alt="Cornet bier actie">
-      </article>
-      <article>
-        <h2>Verzilver je 2e bioscoopkaartje GRATIS <img class="pijltje" src="images/angleright.png" alt="pijltje"></h2>
-        <img src="images/pathebioscoop.png" alt="Pathe actie">
-      </article>
-    </section>
-    
-
-
-    <!-- Promo sectie
-    <section class="promo">
-      <article class="promo-item">
-        <h2>Verzilver je 2e bioscoopkaartje GRATIS</h2>
-        <img src="images/pathebioscoop.png" alt="Pathe actie">
-      </article>
-      <article class="promo-item">
         <h2>Een krachtig blond Belgisch bier met zachte smaak</h2>
         <img src="images/cornetbierimage.png" alt="Cornet bier actie">
       </article>
-    </section> -->
+      <article>
+        <h2>Verzilver je 2e bioscoopkaartje GRATIS</h2>
+        <img src="images/pathebioscoop.png" alt="Pathe actie">
+      </article>
+    </section>
 
     <!-- Categorie sectie -->
     <section class="categories">
@@ -91,13 +82,12 @@
         </article>
       </section>
     </section>
-    
-    
-
 
     <!-- Bonus sectie -->
     <section class="bonus">
-      <h2>Voor jou in de bonus <span class="BB">Bekijk alle Bonus</span></h2>
+      <header>
+        <h2>Voor jou in de bonus <span class="BB">Bekijk alle Bonus</span></h2>
+      </header>
       <section class="bonus-slider">
         <article class="bonus-item">
           <img src="images/smintjes.jpg" alt="Sportlife Mints">
@@ -114,98 +104,54 @@
         </article>
       </section>
     </section>
-  </main>
 
- <!-- Footer -->
- <footer class="footer">
-  
-  <div class="footerDropdown">
-  <select id="boodschappen">
-    <option>Boodschappen</option>
-    <option>Boodschappen</option>
-    <option>Boodschappen</option>
-    <option>Boodschappen</option>
-  </select>
-</div>
-  <!-- Social Media Section -->
-  <div class="footer-socials">
-    <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
-    <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
-    <a href="#" aria-label="Pinterest"><img src="images/pintrest.png" alt="Pinterest"></a>
-    <a href="#" aria-label="AH"><img src="images/ah.png" alt="AH"></a>
-  </div>
-
-  <!-- Navigatie Links -->
-  <nav class="footer-links">
-    <ul>
-      <li><a href="#">Algemene voorwaarden</a></li>
-      <li><a href="#">Zakelijke algemene voorwaarden</a></li>
-      <li><a href="#">Bonusvoorwaarden</a></li>
-      <li><a href="#">Privacybeleid</a></li>
-      <li><a href="#">Cookiebeleid</a></li>
-      <li><a href="#">Over AH</a></li>
-      <li><a href="#">Kwetsbaarheid melden</a></li>
-    </ul>
-  </nav>
-
-  <!-- Disclaimer sectie -->
-  <div class="footer-disclaimer">
-    <img src="images/nix18.png" alt="NIX18-logo">
-    <p>&lt;25 jaar? Laat je legitimatie zien!<br>&lt;18 jaar verkopen wij geen alcohol.</p>
-  </div>
-
-  <!-- Footer opties -->
-  <div class="footer-payments">
-    <img src="images/ideal.png" alt="iDeal">
-    <img src="images/pin.png" alt="Pin">
-    <img src="images/legaalhandelen.png" alt="Legaal handelen">
-    <img src="images/kubus10.png" alt="Waarborg certificaat 10 jaar">
-    <img src="images/kubus.png" alt="Waarborg certificaat">
-  </div>
-</footer>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-
-<html lang="nl">
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AlbertHeijn</title>
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/AhLogo.png">
-</head>
-
-<body>
-  <main>
-    <section class="promo">
-      <article class="promo-item">
+    <!-- Acties sectie -->
+    <section class="actie-sectie">
+      <article>
         <h2>Een krachtig blond Belgisch bier met zachte smaak</h2>
-        <img src="images/cornetbierimage.png" alt="cornetbier actie">
+        <img src="images/cornetbierimage.png" alt="Cornet bier actie">
       </article>
-      
-      <article class="promo-item2">
+      <article>
         <h2>Verzilver je 2e bioscoopkaartje GRATIS</h2>
-        <img src="images/pathebioscoop.png" alt="pathe actie">
+        <img src="images/pathebioscoop.png" alt="Pathe actie">
       </article>
     </section>
   </main>
-  <script defer src="scripts/script.js"></script>
-</body>
-</html> -->
+
+  <!-- Footer sectie -->
+  <footer class="footer">
+    <section class="footer-socials">
+      <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+      <a href="#" aria-label="Pinterest"><img src="images/pintrest.png" alt="Pinterest"></a>
+      <a href="#" aria-label="Albert Heijn"><img src="images/ah.png" alt="Albert Heijn"></a>
+    </section>
+    <nav class="footer-links">
+      <ul>
+        <li><a href="#">Algemene voorwaarden</a></li>
+        <li><a href="#">Zakelijke algemene voorwaarden</a></li>
+        <li><a href="#">Bonusvoorwaarden</a></li>
+        <li><a href="#">Privacybeleid</a></li>
+        <li><a href="#">Cookiebeleid</a></li>
+        <li><a href="#">Over AH</a></li>
+        <li><a href="#">Kwetsbaarheid melden</a></li>
+      </ul>
+    </nav>
+    <!-- Disclaimer sectie -->
+    <section class="footer-disclaimer">
+      <img src="images/nix18.png" alt="NIX18-logo">
+      <p>&lt;25 jaar? Laat je legitimatie zien!<br>&lt;18 jaar verkopen wij geen alcohol.</p>
+    </section>
+    <!-- Footer betalingsopties -->
+    <section class="footer-payments">
+      <img src="images/ideal.png" alt="iDeal">
+      <img src="images/pin.png" alt="Pin">
+      <img src="images/legaalhandelen.png" alt="Legaal handelen">
+      <img src="images/kubus10.png" alt="Waarborg certificaat 10 jaar">
+      <img src="images/kubus.png" alt="Waarborg certificaat">
+    </section>
+  </footer>
+
+

@@ -1,102 +1,161 @@
+/* Algemene styling */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
   background-color: #fff;
+  color: #333;
 }
 
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.1);
+}
+
+/*h1 onzichtbaar */
 .invisible {
   visibility: hidden;
   display: none;
 }
 
-header {
-  background-color: #fff;
-  padding: 0;
-  box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.1);
-}
-
-nav {
+/* Navigatie */
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.6em;
 }
 
-nav section {
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
 }
 
-nav section img {
-  margin-right: 1em;
+/* Menu dropdown */
+.menu-dropdown {
+  position: relative;
 }
 
-.logo {
-  max-height: 3em;
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.search {
-  padding: 0.5em;
-  background-color: #f3f6f8;
-  border: 2px solid #f3f6f8;
+.menu-icon {
+  width: 1.6em;
+  margin-left: 0.6em;
+}
+
+/* .menu-dropdown span {
+  font-size: 0.8em;
+  color: #333;
+  margin-left: 0.5em;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 0.5em;
-  width: 100%;
+  list-style: none;
+  padding: 0.5em 1em;
 }
 
-.icon {
-  width: 2.3em;
+.menu-dropdown[open] .dropdown-menu {
+  display: block;
 }
 
-.search-divider {
-  border: none;
-  border-top: 1px solid #e6e6e6;
-  margin: 0.9em;
+.dropdown-menu li {
+  padding: 0.5em 0;
 }
 
-/* Zoekbalk-container */
-.search-container {
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+} */
+
+/* Logo */
+.logo {
+  max-height: 2.3em;
+  margin-right: 8em;
+}
+
+.nav-right .icon-list {
+  display: flex;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  gap: 0.4em;  
+}
+
+.nav-right .icon-list li {
   display: flex;
   align-items: center;
-  background-color: #f3f6f8;
-  border: none;
-  border-radius: 3em;
-  padding: 0.2em;
-  width: 100%;
 }
 
-/* Icoon */
-.icon {
-  width: 2.3em;
-  height: auto;
-  margin-right: 0.5em;
+.nav-right .icon-list .icon {
+  width: 2.5em;  
+  height: auto; 
 }
 
 /* Zoekbalk */
-.search {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  width: 100%;
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: #ffffff;
 }
 
-/* banner */
+.search-input {
+  width: 80%;
+  max-width: 60em;
+  padding: 0.7em 1em;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 2em;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Banner */
 .banner {
   display: flex;
-  gap: -1em;
   overflow-x: auto;
-  padding: 0.5em;
-  margin-left: -0.5em;
+  padding: 0.7em;
+  margin-right: 0.1em;
+  gap: 0.2em; 
+}
+
+.banner::-webkit-scrollbar {
+  display: none; /* Verberg scrollbar - https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar */
 }
 
 .banner article {
   flex: 0 0 auto;
   width: 90%;
-  max-width: 400px;
   position: relative;
+  margin-right: -0.6em; 
 }
 
 .banner img {
   display: block;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.5em;
 }
 
 .banner h2 {
@@ -106,9 +165,10 @@ nav section img {
   color: white;
   font-size: 1em;
   font-weight: bold;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.5);
   margin: 0;
 }
+
 
 /* Actie-sectie */
 .actie-sectie {
@@ -154,43 +214,11 @@ nav section img {
   margin-left: 1.2em;
 }
 
-.actie-sectie h2 {
-  display: inline-flex;
-  align-items: center;
-}
-
-.actie-sectie h2 .pijltje {
-  margin-left: 0.5em;
-}
-
-/* Promo sectie */
-.promo {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  margin: 2em 0;
-}
-
-.promo article {
-  background-color: #f2f6fc;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 1em;
-  display: flex;
-}
-
-.promo img {
-  width: auto;
-  height: 100px;
-}
-
-.promo h2 {
-  font-size: 1.2em;
-  color: #333;
-}
-
 /* Categorie sectie */
 
+.categories {
+  margin: 2em 1em;
+}
 .categories-header {
   display: flex;
   align-items: center;
@@ -199,37 +227,41 @@ nav section img {
 }
 
 .categories-header h2 {
-  font-size: 25px;
+  font-size: 1.3em;
   margin: 0;
 }
 
 .categories-header h3 {
-  font-size: 15px;
+  font-size: 1em;
   color: #24ade6;
-  margin: 0;
+  margin: 0; 
 }
 
 .category-slider {
   display: flex;
-  gap: 1em;
-  overflow-x: auto;
+  gap: 0.1em;
+  overflow-x: auto; /* Horizontaal scrollen toestaan */
+}
+
+/* Verberg de scrollbar voor de category-slider */
+.category-slider::-webkit-scrollbar {
+  display: none; /* Verberg scrollbar - https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar */
 }
 
 .category-slider article {
   flex: 0 0 auto;
-  width: 250px;
+  width: 15em;
   text-align: center;
 }
 
 .category-slider img {
-  width: 100%;
-  border-radius: 8px;
+  width: 85%;
+  border-radius: 0.5em;
 }
 
 .category-slider p {
   font-weight: bold;
   font-size: 1.1em;
-  margin-right: 6em;
 }
 
 /* Bonus sectie */
@@ -241,6 +273,7 @@ nav section img {
   color: chocolate;
   font-size: 0.5em;
 }
+
 .bonus-slider {
   display: flex;
   gap: 1em;
@@ -249,25 +282,31 @@ nav section img {
 
 .bonus-slider article {
   flex: 0 0 auto;
-  width: 250px;
+  width: 15.625em;
   text-align: center;
 }
 
 .bonus-slider img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.5em;
 }
 
 .bonus-slider p {
   font-weight: bold;
   margin-top: 0.5em;
 }
+
+.bonus-slider::-webkit-scrollbar {
+  display: none; /* Verberg scrollbar - https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar */
+}
+ 
 .korting {
   background-color: chocolate;
   font-weight: bold;
   margin-right: 5em;
-  border-radius: 2px;
+  border-radius: 0.125em;
 }
+
 .korting p {
   color: white;
   font-size: 1.3em;
@@ -296,64 +335,178 @@ nav section img {
 
 /* Links */
 .footer-links ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
-  margin: 0 0 2em 0;
-  margin-left: 15%;
 }
 
 .footer-links li {
-  margin: 0.3em 0;
+  margin: 0.5em 0;
 }
 
 .footer-links a {
   text-decoration: none;
   color: #333;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+  color: #24ade6;
 }
 
-/* Disclaimer */
+/* Disclaimer sectie */
 .footer-disclaimer {
-  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .footer-disclaimer img {
-  display: block;
-  margin: 0 auto 0.5em auto;
   height: 2em;
+  margin-right: 0.5em;
 }
 
 .footer-disclaimer p {
-  font-size: 0.9em;
+  display: inline-block;
+  font-size: 0.8em;
   color: #333;
 }
 
-/* Payment Icons */
+/* Footer betalingsopties */
 .footer-payments {
   display: flex;
   justify-content: center;
-  gap: 1.5em;
+  gap: 1em;
+  margin-top: 2em;
 }
 
 .footer-payments img {
   height: 2em;
-  object-fit: contain;
 }
 
-/* Zoekbalk */
-.search {
-  font-size: 16px;
-  border-radius: 50px;
-  outline: none;
-  box-sizing: border-box;
-  margin-top: 8px;
+
+
+/* ANDERE PAGINA */
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0072ce;
+  padding: 1em;
+  color: white;
 }
 
-.search:focus {
-  background-color: #f8f8f8;
-  border-color: #f8f8f8;
+.logo img {
+  width: 50px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.cart-icon {
+  width: 30px;
+}
+
+.cart-count {
+  background-color: white;
+  color: #0072ce;
+  border-radius: 50%;
+  padding: 0.2em 0.6em;
+  font-weight: bold;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin: 1em 0;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0072ce;
+}
+
+/* Product header */
+.product-header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.product-header .product-image {
+  width: 150px;
+  margin-bottom: 1em;
+}
+
+.product-header h1 {
+  font-size: 1.5em;
+}
+
+.product-header .subtitle {
+  color: #666;
+}
+
+.product-header .price {
+  color: #0072ce;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: #0072ce;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+/* Product info */
+.product-info {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.product-info img {
+  width: 100px;
+  margin-bottom: 0.5em;
+}
+
+/* Omschrijving */
+.description, .nutrition {
+  background: #fff;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Gerelateerde producten */
+.related-products {
+  background: #fff;
+  padding: 1em;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.related-item {
+  text-align: center;
+}
+
+.related-item img {
+  max-width: 100px;
+}
+
+.related-item .price {
+  color: #0072ce;
+  font-weight: bold;
 }

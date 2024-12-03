@@ -136,7 +136,6 @@ Verbeterpunten
 
   -Student 3 (Jazzmine) -> Vraag of ze alle blokjes / secties op haar website moest maken die hetzelfde waren.
   
-
   -Student 4 (Jegor) -> (Niet aanwezig bij feedbackgesprek)
 
 
@@ -191,17 +190,16 @@ Verbeterpunten
   -Student 5 (Jazzmine) -> (Later, ingedeeld in groepje van C ipv B.)
 
   ### Verslag van meeting
-1. Hoogte uitzetten en breedte zelf aanpassen.  
+1. Hoogte uitzetten en breedte zelf aanpassen. of (2)  
 2. `::before` of `::after` toevoegen aan `<h2>` voor iconen of extra styling.  
 3. `<details>` en `<summary>` gebruiken voor dropdownmenu.  
 4. Dropdownmenu uit de les toepassen.  
 5. Navigatie met dropdownmenu en icons erbuiten als linkjes toevoegen.  
-6. Zoekbalk `<input type="search">` gebruiken voor semantiek.  
+6. Zoekbalk `<input type="search">` gebruiken voor semantiek.  (fixed)
 7. Attribute selector gebruiken in CSS voor `<input type="search">`.  
 8. `prefers-reduced-motion` instellen voor betere toegankelijkheid.  
-9. Afbeeldingen zonder spaties of hoofdletters in bestandsnamen gebruiken.  
-10. CSS beter ordenen voor overzicht.
-
+9. Afbeeldingen zonder spaties of hoofdletters in bestandsnamen gebruiken. (fixed)
+10. CSS beter ordenen voor overzicht. (fixed)
 </details>
 
 
@@ -281,7 +279,7 @@ Verbeterpunten
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar (.banner sectie)
   2. bron 2
   3. ...
 
