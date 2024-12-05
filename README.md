@@ -210,7 +210,14 @@ Verbeterpunten
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+- **Is de content op je site het belangrijkste onderdeel?**  
+  - Ja/Nee  
+
+- **Gebruik je duidelijke taal zonder beeldspraak, idiomen of ingewikkelde metaforen?**  
+  - Ja/Nee  
+
+- **Zijn knoppen, links en labels uniek en beschrijvend?**  
+  - Ja/Nee
 
 </details>
 
@@ -222,8 +229,7 @@ Verbeterpunten
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Vragen voorbereid voor in de les
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -280,7 +286,7 @@ Verbeterpunten
   Nb. Vermeld de bronnen ook in je code.
 
   1. https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar (.banner sectie)
-  2. bron 2
-  3. ...
-
+  2. https://www.w3schools.com/cssref/sel_after.php Dropdown menu footer ::after
+  3. /* header animatie die verdwijnt en weer verschijnt met scrollen */
+/* bron: Thomas Norden & ChatGPT */
 </details>

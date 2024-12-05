@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bas Witmond">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Albert Heijn</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="icon" href="images/ahlogo.png" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="invisible">Albert Heijn</h1> 
+
+    <!-- Navigatie -->
+    <div id="navbar">
+      <nav class="navigation">
+        <!-- Dropdown menu -->
+        <details class="menu-dropdown">
+          <summary class="menu-toggle">
+            <img src="images/dropdownmenu.png" alt="Menu Icon" class="menu-icon">
+            <span class="menu-text">Menu</span>
+          </summary>
+        </details>
+
+        <!-- Logo -->
+        <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
+
+        <!-- Rechterkant nav -->
+        <section class="nav-right">
+          <ul class="icon-list">
+            <li>
+              <a href="#" aria-label="Profiel">
+                <img src="images/profiel.png" alt="Profiel" class="icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Favorieten">
+                <img src="images/favorieten.png" alt="Favorieten" class="icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Winkelmandje">
+                <img src="images/winkelwagen.png" alt="Winkelmandje" class="icon">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <hr class="lijntje">
+
+    <!-- Zoekbalk -->
+    <div id="Zoekbalk">
+      <button id="myBtn" aria-label="Zoekbalk openen">
+        <img src="images/searchicon.png" alt="Zoekicoon" class="search-icon">
+        Waar ben je naar op zoek?
+      </button>
+    </div>
+
+    <!-- Modal-->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <img src="images/ahsearch.png" alt="Search" class="search">
+        <input type="text" id="searchInput" placeholder="Waar ben je naar op zoek?" aria-label="Zoeken">
+      </div>
+    </div>
+  </header> <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+  <main>
+      
+
+  <!-- Product Titel Sectie -->
+  <section class="product-header">
+    <img src="images/melk.jpg" alt="AH Halfvolle Melk" class="product-image">
+    <h1>AH Halfvolle Melk</h1>
+    <p class="subtitle">Prijs per LT € 1,25</p>
+    <p class="price">1,25</p>
+    <button class="add-to-cart">Voeg toe</button>
+  </section>
+
+  <!-- Nutri-Score en duurzaamheid -->
+  <section class="product-info">
+    <div class="score-section">
+      <img src="images/nutriscore.png" alt="Nutri-Score B" class="nutri-score">
+      <p>Klimaatneutraal en duurzaam geproduceerd.</p>
+    </div>
+  </section>
+
+  <!-- Omschrijving -->
+  <section class="description">
+    <h2>Omschrijving</h2>
+    <p>Verse halfvolle melk, lekker voor ieder moment van de dag. Lekker, vers en gezond.</p>
+  </section>
+
+  <!-- Voedingswaarden -->
+  <section class="nutrition">
+    <h2>Voedingswaarden</h2>
+    <ul class="nutrition-list">
+      <li><strong>Energie:</strong> 50 kcal</li>
+      <li><strong>Vetten:</strong> 1,5 g</li>
+      <li><strong>Koolhydraten:</strong> 4,8 g</li>
+      <li><strong>Eiwitten:</strong> 3,5 g</li>
+    </ul>
+    <p class="disclaimer">*Gemaakt met verse Nederlandse melk.</p>
+  </section>
+
+  <!-- Gerelateerde producten -->
+  <section class="related-products">
+    <h2>Gerelateerde Producten</h2>
+    <div class="related-grid">
+      <div class="related-item">
+        <img src="images/related-product-1.png" alt="Product 1">
+        <p>Volle melk</p>
+        <p class="price">€1,30</p>
+      </div>
+      <div class="related-item">
+        <img src="images/related-product-2.png" alt="Product 2">
+        <p>Magere melk</p>
+        <p class="price">€1,15</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ingrediënten en Allergenen -->
+  <section class="ingredients">
+    <h2>Ingrediënten</h2>
+    <p>Halfvolle melk, lactose</p>
+    <h2>Allergenen</h2>
+    <p>Bevat lactose.</p>
+  </section>
+
+  <!-- Gebruik en bewaren -->
+  <section class="usage-storage">
+    <h2>Gebruik</h2>
+    <p>Goed schudden voor gebruik.</p>
+    <h2>Bewaren</h2>
+    <p>Bewaren in de koelkast (max. 7 °C). Na openen binnen 3 dagen consumeren.</p>
+  </section>
+
+  <!-- Andere Soorten -->
+  <section class="related-products">
+    <h2>Andere soorten</h2>
+    <div class="related-grid">
+      <article class="related-item">
+        <img src="images/milk1.png" alt="AH Halfvolle melk 1L">
+        <p>AH Halfvolle melk 1L</p>
+        <p>€1,19</p>
+      </article>
+      <article class="related-item">
+        <img src="images/milk2.png" alt="AH Volle melk 1L">
+        <p>AH Volle melk 1L</p>
+        <p>€1,29</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Anderen kochten ook -->
+  <section class="others-bought">
+    <h2>Anderen kochten ook</h2>
+    <div class="bought-grid">
+      <article class="bought-item">
+        <img src="images/product1.png" alt="Yoghurt">
+        <p>AH Yoghurt</p>
+        <p>€2,49</p>
+      </article>
+      <article class="bought-item">
+        <img src="images/product2.png" alt="Kaas">
+        <p>AH Kaasblokjes</p>
+        <p>€2,99</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <!-- Footer menu -->
+  <ul class="footer-menu">
+    <li>
+      <details>
+        <summary>Boodschappen</summary>
+        <ul>
+          <li><a href="#">Producten</a></li>
+          <li><a href="#">Prijsfavorieten</a></li>
+          <li><a href="#">Alles voor de herfst</a></li>
+          <li><a href="#">Alles voor een borrelplank</a></li>
+          <li><a href="#">Alles voor vegetarisch eten</a></li>
+          <li><a href="#">Alles voor Jouw baby</a></li>
+          <li><a href="#">Merken</a></li>
+          <li><a href="#">Nieuw assortiment</a></li>
+          <li><a href="#">Gall & Gall assortiment</a></li>
+          <li><a href="#">Bonus</a></li>
+          <li><a href="#">Bonusfolder</a></li>
+          <li><a href="#">Online bestellen</a></li>
+           <li><a href="#">Zakelijk bestellen</a></li>
+           <li><a href="#">Mijn Albert Heijn Premium</a></li>
+           <li><a href="#">Bezorgbundle</a></li>
+           <li><a href="#">Gratis bezorging</a></li>
+        </ul>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Allerhande</summary>
+        <ul>
+          <li><a href="#">Herfstrecepten</a></li>
+          <li><a href="#">Ovenschotels</a></li>
+          <li><a href="#">Pasta's</a></li>
+          <li><a href="#">Soepen</a></li>
+          <li><a href="#">Borrel recepten</a></li>
+          <li><a href="#">Gezonde recepten</a></li>
+          <li><a href="#">Wat eten we vandaag?</a></li>
+          <li><a href="#">Wat eten we dit weekend?</a></li>
+          <li><a href="#">Weekmenu</a></li>
+          <li><a href="#">Alle recepten</a></li>
+          <li><a href="#">Alle Ingrediënten</a></li>
+          <li><a href="#">Alle receptthema's</a></li>
+          <li><a href="#">Mijn recepten</a></li>
+          <li><a href="#">Allerhande podcast</a></li>
+          <li><a href="#">Over Allerhande</a></li>
+        </ul>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Services</summary>
+        <ul>
+          <li><a href="#">Klantenservice</a></li>
+          <li><a href="#">Winkelservices</a></li>
+          <li><a href="#">AH Mobiel</a></li>
+          <li><a href="#">Mijn AH Miles</a></li>
+          <li><a href="#">Voordeelsop</a></li>
+          <li><a href="#">Bloemenshop</a></li>
+          <li><a href="#">Taartenshop</a></li>
+          <li><a href="#">AH Fotoservice</a></li>
+          <li><a href="#">Staatslot kopen</a></li>
+          <li><a href="#">Kwaliteitsgarantie</a></li>
+          <li><a href="#">Versgarantie</a></li>
+          <li><a href="#">Duurzaamheid</a></li>
+          <li><a href="#">Mijn Leefstijlcoach</a></li>
+          <li><a href="#">Voor Elkaar</a></li>
+        </ul>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Albert Heijn</summary>
+        <ul>
+          <li><a href="#">Over Albert Heijn</a></li>
+          <li><a href="#">Albert Heijn app</a></li>
+          <li><a href="#">Winkels</a></li>
+          <li><a href="#">AH België</a></li>
+          <li><a href="#">In de media</a></li>
+          <li><a href="#">Inspiratie</a></li>
+          <li><a href="#">Vacatures</a></li>
+          <li><a href="#">Adverteren</a></li>
+          <li><a href="#">Vragen over kassabon</a></li>
+          <li><a href="#">Herroepingsrecht</a></li>
+        </ul>
+      </details>
+    </li>
+  </ul>
+
+  <!-- Social media links -->
+  <section class="footer-socials">
+    <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+    <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+    <a href="#" aria-label="Pinterest"><img src="images/pintrest.png" alt="Pinterest"></a>
+    <a href="#" aria-label="Albert Heijn"><img src="images/ah.png" alt="Albert Heijn"></a>
+  </section>
+
+  <!-- Footer links -->
+  <nav class="footer-links">
+    <ul>
+      <li><a href="#">Algemene voorwaarden</a></li>
+      <li><a href="#">Zakelijke algemene voorwaarden</a></li>
+      <li><a href="#">Bonusvoorwaarden</a></li>
+      <li><a href="#">Privacybeleid</a></li>
+      <li><a href="#">Cookiebeleid</a></li>
+      <li><a href="#">Over AH</a></li>
+      <li><a href="#">Kwetsbaarheid melden</a></li>
+    </ul>
+  </nav>
+
+  <!-- Disclaimer sectie -->
+  <section class="footer-disclaimer">
+    <img src="images/nix18.png" alt="NIX18-logo">
+    <p>
+      &lt;25 jaar? Laat je legitimatie zien!<br> &lt;18 jaar verkopen wij
+      geen alcohol.
+    </p>
+  </section>
+
+  <!-- Footer betalingsopties -->
+  <section class="footer-payments">
+    <img src="images/ideal.png" alt="iDeal">
+    <img src="images/pin.png" alt="Pin">
+    <img src="images/legaalhandelen.png" alt="Legaal handelen">
+    <img src="images/kubus10.png" alt="Waarborg certificaat 10 jaar">
+    <img src="images/kubus.png" alt="Waarborg certificaat">
+  </section>
+</footer>
+
+<!-- JavaScript -->
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,20 +1,123 @@
-/* Algemene styling */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'albertheijnfont', sans-serif;
   margin: 0;
   background-color: #fff;
   color: #333;
 }
 
-/* Header */
-header {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.1);
+/* Fonts */
+@font-face {
+  font-family: albertheijnfont;
+  font-weight: bold;
+  src: url(../fonts/hamburg-ah-bold.woff2);
 }
 
-/*h1 onzichtbaar */
+@font-face {
+  font-family: albertheijnfont;
+  font-weight: 300;
+  src: url(../fonts/hamburg-ah-medium.woff2);
+}
+
+@font-face {
+  font-family: albertheijnfont;
+  font-weight: 500;
+  src: url(../fonts/hamburg-ah-demibold.woff2);
+}
+
+@font-face {
+  font-family: albertheijnfont;
+  font-weight: normal;
+  src: url(../fonts/hamburg-ah-regular.woff2);
+}
+
+/*  header animatie die verdwijnt en weer verschijnt met scrollen */ 
+/* bron: Thomas Norden & ChatGPT */
+.header-hidden {
+  position: fixed;
+  top: -19em;
+}
+
+.header-visible {
+  position: fixed;
+  top: 0;
+}
+
+/* Modal Container */
+.modal {
+  display: none; /* Verborgen tot hij wordt aangeklikt */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container voor de zoekbalk */
+#Zoekbalk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0em 0.2em 0.3em rgba(0, 0, 0, 0.1);
+}
+
+#myBtn {
+  display: flex;
+  align-items: center;
+  background-color: #f4f7f9;
+  border: none;
+  border-radius: 1.8em;
+  padding-left: 3em;
+  width: 92%;
+  height: 3.5em;
+  font-size: 1em;
+  color: #647887;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#myBtn .search-icon {
+  width: 2em;
+  margin-left: 0.7em;
+}
+
+.search {
+  position: absolute;
+  left: 20.5em; 
+  width: 3em; 
+  z-index: 1; 
+}
+
+#searchInput {
+  width: 100%;
+  height: 2.8em; 
+  font-size: 1em;
+  padding: 0 2em;
+  margin-top: 0.1em;
+  border: 1px solid #c4c4c4;
+  position: relative;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.1);
+}
+
+/* h1 onzichtbaar */
 .invisible {
   visibility: hidden;
   display: none;
@@ -25,7 +128,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6em;
+  padding: 0.625em;
 }
 
 .nav-left,
@@ -47,39 +150,21 @@ header {
 
 .menu-icon {
   width: 1.6em;
-  margin-left: 0.6em;
+  margin-left: 0.625em;
 }
 
-/* .menu-dropdown span {
-  font-size: 0.8em;
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-text {
+  font-size: 0.625em;
   color: #333;
-  margin-left: 0.5em;
+  margin-top: 0.125em;
+  margin-left: 1em;
 }
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 0.5em;
-  list-style: none;
-  padding: 0.5em 1em;
-}
-
-.menu-dropdown[open] .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li {
-  padding: 0.5em 0;
-}
-
-.dropdown-menu li a {
-  text-decoration: none;
-  color: #333;
-} */
 
 /* Logo */
 .logo {
@@ -89,10 +174,10 @@ header {
 
 .nav-right .icon-list {
   display: flex;
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 0;
-  gap: 0.4em;  
+  gap: 0.4em;
 }
 
 .nav-right .icon-list li {
@@ -101,35 +186,45 @@ header {
 }
 
 .nav-right .icon-list .icon {
-  width: 2.5em;  
-  height: auto; 
+  width: 2.5em;
+  height: auto;
 }
 
 /* Zoekbalk */
 .search-bar {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1em;
   background-color: #ffffff;
 }
 
 .search-input {
   width: 80%;
-  max-width: 60em;
-  padding: 0.7em 1em;
+  padding: 0.7em 1em 0.7em 3em;
   font-size: 1em;
-  border: 1px solid #ddd;
+  border: 0.1em solid #ddd;
   border-radius: 2em;
+  background-color: #f3f6f8;
 }
 
 .search-input::placeholder {
-  color: #999;
+  color: #7d7575;
 }
 
-.search-button {
-  background: none;
+.search-icon {
+  position: absolute;
+  left: 5%;
+  margin-left: 1em;
+  width: 1.9em;
+}
+
+.lijntje {
+  width: 100%; 
   border: none;
-  cursor: pointer;
+  border-top: 0.1em solid #767676;
+  margin: 0.2em 0;
+  opacity: 0.5;
 }
 
 /* Banner */
@@ -138,6 +233,7 @@ header {
   overflow-x: auto;
   padding: 0.7em;
   margin-right: 0.1em;
+  margin-top: 5em;
   gap: 0.2em; 
 }
 
@@ -147,7 +243,7 @@ header {
 
 .banner article {
   flex: 0 0 auto;
-  width: 90%;
+  width: 96%;
   position: relative;
   margin-right: -0.6em; 
 }
@@ -155,6 +251,7 @@ header {
 .banner img {
   display: block;
   width: 100%;
+  height: 100%;
   border-radius: 0.5em;
 }
 
@@ -169,7 +266,6 @@ header {
   margin: 0;
 }
 
-
 /* Actie-sectie */
 .actie-sectie {
   display: flex;
@@ -183,7 +279,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #edd0d0;
-  max-width: 95%;
+  max-width: 92%;
   margin: 0 auto;
 }
 
@@ -214,11 +310,19 @@ header {
   margin-left: 1.2em;
 }
 
-/* Categorie sectie */
+.actie-sectie article h2::after {
+  content: url("../images/arrow.svg");
+  width: 0.4em; 
+  height: 0.6em; 
+  display: inline-block;
+  margin-left: 0.6em; 
+}
 
+/* Categorie sectie */
 .categories {
   margin: 2em 1em;
 }
+
 .categories-header {
   display: flex;
   align-items: center;
@@ -235,12 +339,14 @@ header {
   font-size: 1em;
   color: #24ade6;
   margin: 0; 
+  margin-left: 10em;
+  text-align: right; 
 }
 
 .category-slider {
   display: flex;
-  gap: 0.1em;
-  overflow-x: auto; /* Horizontaal scrollen toestaan */
+  gap: 1em;
+  overflow-x: auto;
 }
 
 /* Verberg de scrollbar voor de category-slider */
@@ -250,23 +356,25 @@ header {
 
 .category-slider article {
   flex: 0 0 auto;
-  width: 15em;
+  width: 15em; 
   text-align: center;
 }
 
 .category-slider img {
-  width: 85%;
+  width: 100%;
   border-radius: 0.5em;
 }
 
 .category-slider p {
   font-weight: bold;
   font-size: 1.1em;
+  text-align: left;
 }
 
 /* Bonus sectie */
 .bonus {
-  margin: 2em 0;
+  position: relative;
+  z-index: 10;  
 }
 
 .BB {
@@ -314,48 +422,43 @@ header {
 
 /* Algemene footer styling */
 .footer {
-  background-color: #f5f8fa;
+  background-color: #f5f8fa; 
   text-align: center;
-  padding: 2em 1em;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  padding: 2em 1em; 
+  line-height: 1.6; 
 }
 
 /* Social Media Icons */
 .footer-socials {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
+  display: flex; 
+  justify-content: center; 
+  gap: 1em; 
   margin-bottom: 2em;
 }
 
 .footer-socials a img {
-  height: 2em;
+  height: 2em; 
 }
 
 /* Links */
 .footer-links ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .footer-links li {
-  margin: 0.5em 0;
+  margin: 0.5em 0; 
 }
 
 .footer-links a {
-  text-decoration: none;
-  color: #333;
+  text-decoration: none; 
+  color: #333; 
   font-size: 0.9em;
-}
-
-.footer-links a:hover {
-  color: #24ade6;
 }
 
 /* Disclaimer sectie */
 .footer-disclaimer {
-  margin-top: 2em;
+  margin-top: 2em; 
 }
 
 .footer-disclaimer img {
@@ -365,20 +468,182 @@ header {
 
 .footer-disclaimer p {
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.8em; 
   color: #333;
 }
 
-/* Footer betalingsopties */
 .footer-payments {
-  display: flex;
+  display: flex; 
   justify-content: center;
   gap: 1em;
   margin-top: 2em;
 }
 
 .footer-payments img {
-  height: 2em;
+  height: 2em; 
 }
 
+/* Menu Styling */
+.footer-menu {
+  display: grid; 
+  gap: 1em; 
+  list-style: none;
+  padding: 0;
+  margin: 1.5em;
+  text-align: left; 
+}
 
+.footer-menu summary {
+  display: flex; 
+  justify-content: space-between; 
+  font-weight: bold;
+  font-size: 1em; 
+  color: #333;
+  padding: 0.3em;
+}
+
+.footer-menu summary::after {
+  content: ''; /* Voegt pijltje toe */
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border: solid #333;
+  border-width: 0 0.125em 0.125em 0;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease; 
+}
+
+.footer-menu details[open] summary::after {
+  transform: rotate(-135deg); /* Pijl naar beneden draait bij openen (klikken) / https://www.w3schools.com/cssref/sel_after.php Dropdown menu footer ::after*/ 
+}
+
+.footer-menu ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0.5em 0 0 1em; 
+}
+
+.footer-menu ul li {
+  margin: 0.5em 0; 
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Product pagina*/
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0072ce;
+  padding: 1em;
+  color: white;
+}
+
+.logo img {
+  width: 3.1em; 
+}
+
+/* Product header */
+.product-header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.product-header .product-image {
+  width: 9.3em; 
+  margin-bottom: 1em;
+}
+
+.product-header h1 {
+  font-size: 1.5em;
+}
+
+.product-header .subtitle {
+  color: #666;
+}
+
+.product-header .price {
+  color: #0072ce;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: #0072ce;
+  color: white;
+  border: none;
+  padding: 0.3em 0.6em; 
+  border-radius: 0.25em;
+  cursor: pointer;
+  margin-top: 0.3em;
+}
+
+/* Product info */
+.product-info {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.product-info img {
+  width: 6.2em; 
+  margin-bottom: 0.3em;
+}
+
+/* Omschrijving */
+.description, .nutrition {
+  background: #fff;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.2em;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.1);
+}
+
+/* Gerelateerde producten */
+.related-products {
+  background: #fff;
+  padding: 1em;
+  border-radius: 0.2em;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.1);
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.3em, 1fr)); 
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.related-item {
+  text-align: center;
+}
+
+.related-item img {
+  max-width: 6.2em; 
+}
+
+.related-item .price {
+  color: #0072ce;
+  font-weight: bold;
+}
+
+/* Zoekbalk */
+#Zoekbalk {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 4em;
+  height: 3em;
+}
+
+/* Navigatiebalk */
+#navbar {
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+}
