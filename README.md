@@ -229,7 +229,11 @@ Verbeterpunten
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-Vragen voorbereid voor in de les
+  -Vragen waarom mijn searchbar op een andere plek begint in chrome dan wat ik graag zou willen.
+  -Vragen waarom ik geen "go back" pijltje kan toevoegen in mijn model.
+  -Vragen waarom sommige fonts van de ah.nl website anders zijn dan mijn website terwijl ik hun fonts gebruik.
+  -Vragen of het moet als je op je profiel icoontje klikt of dat net zoals het dropdown menu moet werken.
+  -Verder over dropdownmenu korte vraag stellen.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
