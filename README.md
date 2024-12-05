@@ -190,16 +190,16 @@ Verbeterpunten
   -Student 5 (Jazzmine) -> (Later, ingedeeld in groepje van C ipv B.)
 
   ### Verslag van meeting
-1. Hoogte uitzetten en breedte zelf aanpassen. of (2)  
-2. `::before` of `::after` toevoegen aan `<h2>` voor iconen of extra styling.  
-3. `<details>` en `<summary>` gebruiken voor dropdownmenu.  
-4. Dropdownmenu uit de les toepassen.  
-5. Navigatie met dropdownmenu en icons erbuiten als linkjes toevoegen.  
-6. Zoekbalk `<input type="search">` gebruiken voor semantiek.  (fixed)
-7. Attribute selector gebruiken in CSS voor `<input type="search">`.  
-8. `prefers-reduced-motion` instellen voor betere toegankelijkheid.  
-9. Afbeeldingen zonder spaties of hoofdletters in bestandsnamen gebruiken. (fixed)
-10. CSS beter ordenen voor overzicht. (fixed)
+  1. Hoogte uitzetten en breedte zelf aanpassen. of (2)  
+  2. `::before` of `::after` toevoegen aan `<h2>` voor iconen of extra styling.  
+  3. `<details>` en `<summary>` gebruiken voor dropdownmenu.  
+  4. Dropdownmenu uit de les toepassen.  
+  5. Navigatie met dropdownmenu en icons erbuiten als linkjes toevoegen.  
+  6. Zoekbalk `<input type="search">` gebruiken voor semantiek.  (fixed)
+  7. Attribute selector gebruiken in CSS voor `<input type="search">`.  
+  8. `prefers-reduced-motion` instellen voor betere toegankelijkheid.  
+  9. Afbeeldingen zonder spaties of hoofdletters in bestandsnamen gebruiken. (fixed)
+  10. CSS beter ordenen voor overzicht. (fixed)
 </details>
 
 
@@ -210,15 +210,7 @@ Verbeterpunten
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-- **Is de content op je site het belangrijkste onderdeel?**  
-  - Ja/Nee  
-
-- **Gebruik je duidelijke taal zonder beeldspraak, idiomen of ingewikkelde metaforen?**  
-  - Ja/Nee  
-
-- **Zijn knoppen, links en labels uniek en beschrijvend?**  
-  - Ja/Nee
-
+  Dit moet ik nog verwerken. Heb enkel het document ingevuld maar moet het nog documenteren.
 </details>
 
 
@@ -229,21 +221,23 @@ Verbeterpunten
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
+  Tot nu toe gaat het wel oke. Alleen vind ik bepaalde onderdelen best lastig waar ik nu aan het einde hard nog aan moet werken. Denk hierbij aan dropdownmenu, mijn model etc. Maar tot nu toe denk ik dat ik wel op schema loop en dat het wel gaat lukken de mondeling. Mijn productpagina is niet heel veel meer werk dan de onderdelen wat ik nu al heb gedaan, dus ik denk dat ik dat dit weekend wel af kan maken.
+
+  ### Agenda voor meeting
   -Vragen waarom mijn searchbar op een andere plek begint in chrome dan wat ik graag zou willen.
   -Vragen waarom ik geen "go back" pijltje kan toevoegen in mijn model.
   -Vragen waarom sommige fonts van de ah.nl website anders zijn dan mijn website terwijl ik hun fonts gebruik.
   -Vragen of het moet als je op je profiel icoontje klikt of dat net zoals het dropdown menu moet werken.
   -Verder over dropdownmenu korte vraag stellen.
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  -Student 1 (Bas) -> Vraag stellen over mijn searchbar die op een andere plek begint in chrome, vragen over go back pijltje in model, vraag over fonts ah.nl die bij sommige stukjes anders zijn, vraag over profie icoontje of dat dropdownmenu moet werken en vragen over dropdownmenu waar ik korte vraag over wil stellen.
 
+  -Student 2 (Maya) -> 
+
+  -Student 3 (Jazzmine) -> 
+  
+  -Student 4 (Jegor) -> Vraag over video die lang duurt via youtube of twitter maar te groot is voor github pagina. / Carousel werkt niet hetzelfde als op de tesla pagina. Volgend blokje tekst kunnen zien in carousel. Veel padding tussen section en footer, hoe dit weg kan. Error vraag over hoveren, wat niet in de pagina hoefde
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -279,7 +273,6 @@ Verbeterpunten
 </details>
 
 
-
 ## Bronnenlijst
 
 <details open>
@@ -291,6 +284,5 @@ Verbeterpunten
 
   1. https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar (.banner sectie)
   2. https://www.w3schools.com/cssref/sel_after.php Dropdown menu footer ::after
-  3. /* header animatie die verdwijnt en weer verschijnt met scrollen */
-/* bron: Thomas Norden & ChatGPT */
+  3. /* header animatie die verdwijnt en weer verschijnt met scrollen --> bron: Thomas Norden & ChatGPT */
 </details>
