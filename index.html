@@ -9,21 +9,49 @@
   <link rel="icon" href="images/ahlogo.png" type="image/svg+xml">
 </head>
 <body>
+<!-- Header -->
+<header>
+  <h1 class="invisible">Albert Heijn</h1> 
+</header>
 
-  <!-- Header -->
-  <header>
-    <h1 class="invisible">Albert Heijn</h1> 
+<!-- Navigatiebalk -->
+<nav id="navbar" class="navigation">
+  <!-- Dropdown menu -->
+  <details class="menu-dropdown" aria-labelledby="menu-toggle">
+    <!-- De summary bevat de menu titel en icoon -->
+    <summary id="menu-toggle" class="menu-toggle">
+      <img src="images/dropdownmenu.png" alt="Menu Icon" class="menu-icon">
+      <span class="menu-text">menu</span>
+    </summary>
 
-    <!-- Navigatie -->
-    <div id="navbar">
-      <nav class="navigation">
-        <!-- Dropdown menu -->
-        <details class="menu-dropdown">
-          <summary class="menu-toggle">
-            <img src="images/dropdownmenu.png" alt="Menu Icon" class="menu-icon">
-            <span class="menu-text">Menu</span>
-          </summary>
-        </details>
+    <!-- Inloggedeeltes of profiel sectie -->
+    <section class="login-section">
+      <p>Inloggen</p>
+    </section>
+
+    <!-- Dropdown menu items -->
+    <ul class="menu-items">
+      <li><a href="#" aria-label="Bekijk producten"><img src="images/productendropdown.png" alt="Producten">Producten</a></li>
+      <li><a href="#" aria-label="Bekijk bonus"><img src="images/bonusdropdown.png" alt="Bonus">Bonus</a></li>
+      <li><a href="#" aria-label="Bekijk recepten"><img src="images/receptendropdown.png" alt="Recepten">Recepten</a></li>
+
+      <!-- Scheidingsruimte -->
+      <li class="divider" role="separator"></li>
+
+      <li><a href="#" aria-label="Bekijk mijn profiel"><img src="images/mijnprofieldropdown.png" alt="Mijn profiel">Mijn profiel</a></li>
+      <li><a href="#" aria-label="Bekijk online bestellen"><img src="images/onlinebestellendropdown.png" alt="Online bestellen">Online bestellen</a></li>
+      <li><a href="#" aria-label="Bekijk win- en spaaracties"><img src="images/winspaaractiedropdown.png" alt="Win en spaaracties">Win en spaaracties</a></li>
+
+      <!-- Scheidingsruimte -->
+      <li class="divider" role="separator"></li>
+
+      <li><a href="#" aria-label="Bekijk winkels"><img src="images/winkelsdropdown.png" alt="Winkels">Winkels</a></li>
+      <li><a href="#" aria-label="Bekijk zakelijk"><img src="images/zakelijkdropdown.png" alt="Zakelijk">Zakelijk</a></li>
+      <li><a href="#" aria-label="Bekijk klantenservice"><img src="images/klantenservicedropdown.png" alt="Klantenservice">Klantenservice</a></li>
+      <li><a href="#" aria-label="Bekijk voordeelshop"><img src="images/voordeelshopdropdown.png" alt="Voordeelshop">Voordeelshop</a></li>
+      <li><a href="#" aria-label="Bekijk over AH"><img src="images/overahdropdown.png" alt="Over AH">Over AH</a></li>
+    </ul>
+  </details>
 
         <!-- Logo -->
         <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
@@ -41,10 +69,11 @@
                 <img src="images/favorieten.png" alt="Favorieten" class="icon">
               </a>
             </li>
-            <li>
-              <a href="#" aria-label="Winkelmandje">
-                <img src="images/winkelwagen.png" alt="Winkelmandje" class="icon">
-              </a>
+            <li class="winkelmandje">
+            <a href="#" aria-label="Winkelmandje">
+              <img src="images/winkelmandjel.png" alt="Winkelmandje" class="icon">
+              <span class="prijs">0.00</span> <!-- Toegevoegde tekst voor prijs -->
+            </a>
             </li>
           </ul>
         </section>
@@ -54,7 +83,7 @@
     <hr class="lijntje">
 
     <!-- Zoekbalk -->
-    <div id="Zoekbalk">
+    <div id="Zoekbalk" class="header-visible">
       <button id="myBtn" aria-label="Zoekbalk openen">
         <img src="images/searchicon.png" alt="Zoekicoon" class="search-icon">
         Waar ben je naar op zoek?
@@ -64,24 +93,34 @@
     <!-- Modal-->
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <img src="images/ahsearch.png" alt="Search" class="search">
+        <button id="goBack" aria-label="teruggaan vorige pagina">
+          <img src="images/gaterug.png" alt="terug icoontje" class="terug-icon">
+        </button>
         <input type="text" id="searchInput" placeholder="Waar ben je naar op zoek?" aria-label="Zoeken">
+              <img src="images/ahsearch.png" alt="Search" class="search">
       </div>
     </div>
   </header> <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
-    <main>
+   <main>
       
-      <!-- Banner sectie -->
-      <section class="banner">
-        <article>
-          <h2>Alles voor het leukste feest van het jaar</h2>
-          <img src="images/sinterklaasah.png" alt="Sinterklaas banner">
-        </article>
-        <article>
-          <h2>Scoor nu heel veel GRATIS</h2>
-          <img src="images/ahgigagratisweek.png" alt="Gigagratis week">
-        </article>
-      </section>
+    <!-- Banner sectie -->
+    <section class="banner">
+      <article>
+        <h2>Alles voor het leukste feest van het jaar</h2>
+        <img src="images/sinterklaasah.png" alt="Sinterklaas banner" class="banner-image">
+        <a href="#" class="banner-button">
+          <img src="images/buttonbanner1.png" alt="Button image" class="button-image">
+        </a>
+      </article>
+      <article>
+        <h2>Scoor nu heel veel GRATIS</h2>
+        <img src="images/ahgigagratisweek.png" alt="Gigagratis week" class="banner-image">
+        <a href="#" class="banner-button">
+          <img src="images/buttonbanner1.png" alt="Button image" class="button-image">
+        </a>
+      </article>
+    </section>
+
 
       <!-- Acties sectie -->
       <section class="actie-sectie">

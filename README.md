@@ -224,8 +224,8 @@ Verbeterpunten
   Tot nu toe gaat het wel oke. Alleen vind ik bepaalde onderdelen best lastig waar ik nu aan het einde hard nog aan moet werken. Denk hierbij aan dropdownmenu, mijn model etc. Maar tot nu toe denk ik dat ik wel op schema loop en dat het wel gaat lukken de mondeling. Mijn productpagina is niet heel veel meer werk dan de onderdelen wat ik nu al heb gedaan, dus ik denk dat ik dat dit weekend wel af kan maken.
 
   ### Agenda voor meeting
-  -Vragen waarom mijn searchbar op een andere plek begint in chrome dan wat ik graag zou willen.
-  -Vragen waarom ik geen "go back" pijltje kan toevoegen in mijn model.
+  -Vragen waarom mijn searchbar op een andere plek begint in chrome dan wat ik graag zou willen. (fixed)
+  -Vragen waarom ik geen "go back" pijltje kan toevoegen in mijn model. (fixed)
   -Vragen waarom sommige fonts van de ah.nl website anders zijn dan mijn website terwijl ik hun fonts gebruik.
   -Vragen of het moet als je op je profiel icoontje klikt of dat net zoals het dropdown menu moet werken.
   -Verder over dropdownmenu korte vraag stellen.
@@ -233,19 +233,21 @@ Verbeterpunten
 
   -Student 1 (Bas) -> Vraag stellen over mijn searchbar die op een andere plek begint in chrome, vragen over go back pijltje in model, vraag over fonts ah.nl die bij sommige stukjes anders zijn, vraag over profie icoontje of dat dropdownmenu moet werken en vragen over dropdownmenu waar ik korte vraag over wil stellen.
 
-  -Student 2 (Maya) -> 
+  -Student 2 (Maya) -> Vragen over hamburger menu. 3 streepjes laten animeren, maar weet niet hoe je dat doet. Vraag over hoe je tekst in plaatjes kan doen in een carousel. Dit werkt niet, aangezien de tekst in het plaatje beweegt.
 
-  -Student 3 (Jazzmine) -> 
+  -Student 3 (Jazzmine) -> Vraag over afbeeldingen op haar site, met name het hamburgermenu. Pijltjes veranderen niet van positie, alleen moeten iets anders staan dan hoe ze nu staan.
   
   -Student 4 (Jegor) -> Vraag over video die lang duurt via youtube of twitter maar te groot is voor github pagina. / Carousel werkt niet hetzelfde als op de tesla pagina. Volgend blokje tekst kunnen zien in carousel. Veel padding tussen section en footer, hoe dit weg kan. Error vraag over hoveren, wat niet in de pagina hoefde
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Model.content aanpassen en flexdirection row aanpassen en justify content: space-between fixen.
+  Alle images op mijn site widht 100% geven zodat ik ze niet 1 voor 1 moet stijlen.
+  Img en Input omwisselen.
+  Image height en width op 2em doen.
+  Hamburgermenu verder afmaken en fixen.
+  Productpagina optimaliseren en nog uitwerken. "Verder goed op weg"
 
 </details>
 
