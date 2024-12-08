@@ -9,171 +9,292 @@
   <link rel="icon" href="images/ahlogo.png" type="image/svg+xml">
 </head>
 <body>
-
   <!-- Header -->
   <header>
-    <h1 class="invisible">Albert Heijn</h1> 
+    <h1 class="invisible">Albert Heijn</h1>
 
-    <!-- Navigatie -->
-    <div id="navbar">
-      <nav class="navigation">
-        <!-- Dropdown menu -->
-        <details class="menu-dropdown">
-          <summary class="menu-toggle">
-            <img src="images/dropdownmenu.png" alt="Menu Icon" class="menu-icon">
-            <span class="menu-text">Menu</span>
-          </summary>
-        </details>
+    <!-- Navigatiebalk -->
+    <nav id="navbar" class="navigation">
+      <details class="menu-dropdown" aria-labelledby="menu-toggle">
+        <summary id="menu-toggle" class="menu-toggle">
+          <img src="images/dropdownmenu.png" alt="Menu Icon" class="menu-icon">
+          <span class="menu-text">menu</span>
+        </summary>
 
-        <!-- Logo -->
-        <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
-
-        <!-- Rechterkant nav -->
-        <section class="nav-right">
-          <ul class="icon-list">
-            <li>
-              <a href="#" aria-label="Profiel">
-                <img src="images/profiel.png" alt="Profiel" class="icon">
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Favorieten">
-                <img src="images/favorieten.png" alt="Favorieten" class="icon">
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Winkelmandje">
-                <img src="images/winkelwagen.png" alt="Winkelmandje" class="icon">
-              </a>
-            </li>
-          </ul>
+        <section class="login-section">
+          <p>Inloggen</p>
         </section>
-      </nav>
-    </div>
+
+        <ul class="menu-items">
+          <li><a href="#"><img src="images/productendropdown.png" alt="Producten">Producten</a></li>
+          <li><a href="#"><img src="images/bonusdropdown.png" alt="Bonus">Bonus</a></li>
+          <li><a href="#"><img src="images/receptendropdown.png" alt="Recepten">Recepten</a></li>
+          <li class="divider" role="separator"></li>
+          <li><a href="#"><img src="images/mijnprofieldropdown.png" alt="Mijn profiel">Mijn profiel</a></li>
+          <li><a href="#"><img src="images/onlinebestellendropdown.png" alt="Online bestellen">Online bestellen</a></li>
+          <li><a href="#"><img src="images/winspaaractiedropdown.png" alt="Win en spaaracties">Win en spaaracties</a></li>
+          <li class="divider" role="separator"></li>
+          <li><a href="#"><img src="images/winkelsdropdown.png" alt="Winkels">Winkels</a></li>
+          <li><a href="#"><img src="images/zakelijkdropdown.png" alt="Zakelijk">Zakelijk</a></li>
+          <li><a href="#"><img src="images/klantenservicedropdown.png" alt="Klantenservice">Klantenservice</a></li>
+          <li><a href="#"><img src="images/voordeelshopdropdown.png" alt="Voordeelshop">Voordeelshop</a></li>
+          <li><a href="#"><img src="images/overahdropdown.png" alt="Over AH">Over AH</a></li>
+        </ul>
+      </details>
+
+      <!-- Logo -->
+      <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
+
+      <!-- Rechterkant navigatie -->
+      <section class="nav-right">
+        <ul class="icon-list">
+          <li><a href="#"><img src="images/profiel.png" alt="Profiel" class="icon"></a></li>
+          <li><a href="#"><img src="images/favorieten.png" alt="Favorieten" class="icon"></a></li>
+          <li class="winkelmandje">
+            <a href="#"><img src="images/winkelmandjel.png" alt="Winkelmandje" class="icon"><span class="prijs">0.00</span></a>
+          </li>
+        </ul>
+      </section>
+    </nav>
 
     <hr class="lijntje">
 
     <!-- Zoekbalk -->
     <div id="Zoekbalk">
       <button id="myBtn" aria-label="Zoekbalk openen">
-        <img src="images/searchicon.png" alt="Zoekicoon" class="search-icon">
-        Waar ben je naar op zoek?
+        <img src="images/searchicon.png" alt="Zoekicoon" class="search-icon">Waar ben je naar op zoek?
       </button>
     </div>
 
-    <!-- Modal-->
+    <!-- Modal -->
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <img src="images/ahsearch.png" alt="Search" class="search">
+        <button id="goBack" aria-label="Teruggaan vorige pagina">
+          <img src="images/gaterug.png" alt="Terug icoontje" class="terug-icon">
+        </button>
         <input type="text" id="searchInput" placeholder="Waar ben je naar op zoek?" aria-label="Zoeken">
+        <img src="images/ahsearch.png" alt="Search" class="search">
       </div>
     </div>
-  </header> <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+  </header>
+
   <main>
+      <!-- Navigatie links -->
+      <nav class="header-links">
+        <a href="#" class="back-link">&lt; Terug</a>
+        <a href="#" class="all-link">Alles van AH &gt;</a>
+      </nav>
+
+    <!-- Product Header -->
+    <section class="product-header">
+      <div class="product-icons">
+        <img src="images/vegan.png" alt="Vegan logo" class="vegan-logo">
+        <img src="images/nutriscore.png" alt="Nutri-Score B" class="nutri-score">
+      </div>
+
+      <div class="product-image-container">
+        <img src="images/melk.jpg" alt="AH Volle Melk" class="product-image">
+      </div>
+
+      <div class="product-right">
+        <p class="product-price"><strong>1.25</strong></p>
+        <p class="product-volume">1l</p>
+      </div>
+    </section>
+
+    <div class="product-details">
+      <h2 class="product-title">AH Halfvolle melk</h2>
+      <p class="product-subtitle">Prijs per LT € 1,25</p>
+      <p class="add-to-cart">Voeg toe +</p>
+
+      <!-- Nutri-Score Sectie -->
+      <div class="nutri-score-section">
+        <img src="images/nutriscore.png" alt="Nutri-Score B" class="nutri-score-img">
+        <a href="#" class="nutri-score-link">Wat is Nutri-Score?</a>
+      </div>
+    </div>
+
+          <!-- over product Sectie -->
+    <section class="product-highlights">
+      <p>Verse halfvolle melk, lekker voor ieder moment van de dag.</p>
+      <div class="highlight-list">
+        <ul>
+          <li>Lekker, vers en gezond.</li>
+          <li>Van nature rijk aan eiwit en calcium.</li>
+        </ul>
+      </div>
+    </section>
+    
+          <!-- omschrijving product Sectie -->
+    <article class="product-description">
+      <h2>Omschrijving</h2>
+      <ul class="description-list">
+        <li>Gepasteuriseerde halfvolle melk.</li>
+        <li>Beter Voor Natuur en Boer.</li>
+        <li>Samen met meer dan 450 vaste melkveehouders maken wij onze Nederlandse zuivel steeds duurzamer. Dat is niet alleen lekker, maar ook beter voor koe, natuur en boer. Zo krijgt de koe meer ruimte, zorgt een gevarieerd kruidengrasland voor meer biodiversiteit en betalen wij onze boeren een extra vergoeding.</li>
+        <li>Ga voor meer informatie naar ah.nl/betereten.</li>
+        <li>Deze Albert Heijn zuivel is voor 100% afkomstig van koeien die minimaal 120 dagen per jaar, 6 uur per dag in de wei lopen. De weidegang geeft koeien meer bewegingsruimte en in de wei hebben de koeien ruimte voor hun natuurlijke graasgedrag. Zo kunt u blijven genieten van het karakteristieke landschap met koeien in de wei.</li>
+      </ul>
+    </article>
+
+    <section class="item-details">
+      <h2>Inhoud en gewicht</h2>
+      <ul class="details-list">
+        <li>1 Liter</li>
+        <li><strong>Portiegrootte:</strong> 200 milliliter</li>
+        <li><strong>Aantal porties:</strong> 5</li>
+      </ul>
+    </section>
+    
+    
+    <section class="features">
+      <h2>Kenmerken</h2>
+      <ul class="features-list">
+        <li>
+          <img src="images/gecertificeerd.png" alt="Gecertificeerd">
+          Papler en/of hout van gecertificeerde herkomst
+        </li>
+        <li>
+          <img src="images/vegatekst.png" alt="Vegan">
+          Vegetarisch
+        </li>
+        <li>
+          <img src="images/betervoornatuur.png" alt="Beter voor Koe, Natuur & Boer">
+          Beter voor Koe, Natuur & Boer
+        </li>
+        <li>
+          <img src="images/glutenvrij.png" alt="Glutenvrij">
+          Glutenvrij
+        </li>
+        <li>
+          <img src="images/weidemelk.png" alt="Weldemelk uit Nederland">
+          Weldemelk uit Nederland
+        </li>
+      </ul>
+    </section>
+    
+    <section class="ingredients-info">
+      <h2>Ingrediënten</h2>
+      <p>Ingrediënten: halfvolle <strong>melk</strong>*.<br>Waarvan toegevoegde suikers 0.00g per 100 milliliter en waarvan toegevoegd zout 0.00g per 100 milliliter.<br></p>
+        <p>*Van weide<strong>melk</strong></p>
       
+        <h2 class="allergie">Allergie-informatie</h2>
+        <p><strong>Bevat:</strong> Melk, Lactose</p>
+     </section>
+    
+    <section class="nutrition-info">
+      <h2>Voedingswaarden</h2>
+      <p>Deze waarden gelden voor het onbereide product.</p>
+      <table class="nutrition-table">
+        <thead>
+          <tr>
+            <th>Soort</th>
+            <th>Per 100 Milliliter</th>
+            <th>RI*</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Energie</td>
+            <td>197 kJ<br>(47 kcal)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Vet</td>
+            <td>1.5 g</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="sub-value">waarvan verzadigd</td>
+            <td>1.1 g</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="sub-value">waarvan onverzadigd</td>
+            <td>0.4 g</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Koolhydraten</td>
+            <td>4.7 g</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="sub-value">waarvan suikers</td>
+            <td>4.7 g</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Voedingsvezel</td>
+            <td>0 g</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Eiwitten</td>
+            <td>3.6 g</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Zout</td>
+            <td>0.13 g</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Vitamine B2 / Riboflavine</td>
+            <td>0.18 mg</td>
+            <td>12%</td>
+          </tr>
+          <tr>
+            <td>Vitamine B12 / Cyano-Cobalamine</td>
+            <td>0.47 μg</td>
+            <td>18%</td>
+          </tr>
+          <tr>
+            <td>Calcium</td>
+            <td>126 mg</td>
+            <td>15%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="reference-note">
+        * Referentie-Inname van een gemiddelde volwassene is 8400 kJ / 2000 kcal
+      </p>
+    </section>      <!-- https://www.w3schools.com/tags/tag_tr.asp en chatgpt -->
 
-  <!-- Product Titel Sectie -->
-  <section class="product-header">
-    <img src="images/melk.jpg" alt="AH Halfvolle Melk" class="product-image">
-    <h1>AH Halfvolle Melk</h1>
-    <p class="subtitle">Prijs per LT € 1,25</p>
-    <p class="price">1,25</p>
-    <button class="add-to-cart">Voeg toe</button>
-  </section>
-
-  <!-- Nutri-Score en duurzaamheid -->
-  <section class="product-info">
-    <div class="score-section">
-      <img src="images/nutriscore.png" alt="Nutri-Score B" class="nutri-score">
-      <p>Klimaatneutraal en duurzaam geproduceerd.</p>
-    </div>
-  </section>
-
-  <!-- Omschrijving -->
-  <section class="description">
-    <h2>Omschrijving</h2>
-    <p>Verse halfvolle melk, lekker voor ieder moment van de dag. Lekker, vers en gezond.</p>
-  </section>
-
-  <!-- Voedingswaarden -->
-  <section class="nutrition">
-    <h2>Voedingswaarden</h2>
-    <ul class="nutrition-list">
-      <li><strong>Energie:</strong> 50 kcal</li>
-      <li><strong>Vetten:</strong> 1,5 g</li>
-      <li><strong>Koolhydraten:</strong> 4,8 g</li>
-      <li><strong>Eiwitten:</strong> 3,5 g</li>
-    </ul>
-    <p class="disclaimer">*Gemaakt met verse Nederlandse melk.</p>
-  </section>
-
-  <!-- Gerelateerde producten -->
-  <section class="related-products">
-    <h2>Gerelateerde Producten</h2>
-    <div class="related-grid">
-      <div class="related-item">
-        <img src="images/related-product-1.png" alt="Product 1">
-        <p>Volle melk</p>
-        <p class="price">€1,30</p>
+    
+    <section class="related-products">
+      <h2>Andere soorten</h2>
+      <div class="related-grid">
+        <article class="related-item">
+          <img src="images/ahmelk05.png" alt="AH Halfvolle melk 0.5 liter" class="product-img">
+          <div class="related-info">
+            <p class="product-name">AH Halfvolle melk</p>
+            <p class="product-price">0.89</p>
+            <p class="product-volume">0,5 l</p>
+          </div>
+          <img src="images/blauwebutton.png" alt="Button image" class="buttonblauw">
+        </article>
+        <article class="related-item">
+          <img src="images/ahmelk15.png" alt="AH Halfvolle melk 1.5 liter" class="product-img">
+          <div class="related-info">
+            <p class="product-name">AH Halfvolle melk</p>
+            <p class="product-price">1.75</p>
+            <p class="product-volume">1,5 l</p>
+          </div>
+          <img src="images/blauwebutton.png" alt="Button image" class="buttonblauw">
+        </article>
+        <article class="related-item">
+          <img src="images/ahmelkcalsium.png" alt="AH Halfvolle melkdrank extra calcium 1 liter" class="product-img">
+          <div class="related-info">
+            <p class="product-name">AH Halfvolle melkdrank extra calcium</p>
+            <p class="product-price">1.49</p>
+            <p class="product-volume">1 l</p>
+          </div>
+          <img src="images/blauwebutton.png" alt="Button image" class="buttonblauw">
+        </article>
       </div>
-      <div class="related-item">
-        <img src="images/related-product-2.png" alt="Product 2">
-        <p>Magere melk</p>
-        <p class="price">€1,15</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ingrediënten en Allergenen -->
-  <section class="ingredients">
-    <h2>Ingrediënten</h2>
-    <p>Halfvolle melk, lactose</p>
-    <h2>Allergenen</h2>
-    <p>Bevat lactose.</p>
-  </section>
-
-  <!-- Gebruik en bewaren -->
-  <section class="usage-storage">
-    <h2>Gebruik</h2>
-    <p>Goed schudden voor gebruik.</p>
-    <h2>Bewaren</h2>
-    <p>Bewaren in de koelkast (max. 7 °C). Na openen binnen 3 dagen consumeren.</p>
-  </section>
-
-  <!-- Andere Soorten -->
-  <section class="related-products">
-    <h2>Andere soorten</h2>
-    <div class="related-grid">
-      <article class="related-item">
-        <img src="images/milk1.png" alt="AH Halfvolle melk 1L">
-        <p>AH Halfvolle melk 1L</p>
-        <p>€1,19</p>
-      </article>
-      <article class="related-item">
-        <img src="images/milk2.png" alt="AH Volle melk 1L">
-        <p>AH Volle melk 1L</p>
-        <p>€1,29</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Anderen kochten ook -->
-  <section class="others-bought">
-    <h2>Anderen kochten ook</h2>
-    <div class="bought-grid">
-      <article class="bought-item">
-        <img src="images/product1.png" alt="Yoghurt">
-        <p>AH Yoghurt</p>
-        <p>€2,49</p>
-      </article>
-      <article class="bought-item">
-        <img src="images/product2.png" alt="Kaas">
-        <p>AH Kaasblokjes</p>
-        <p>€2,99</p>
-      </article>
-    </div>
-  </section>
-</main>
+    </section>        
+  </main>
 
 
 <footer class="footer">
@@ -283,7 +404,7 @@
       <li><a href="#">Privacybeleid</a></li>
       <li><a href="#">Cookiebeleid</a></li>
       <li><a href="#">Over AH</a></li>
-      <li><a href="#">Kwetsbaarheid melden</a></li>
+      <li><a href="product_pagina.html">Kwetsbaarheid melden</a></li>
     </ul>
   </nav>
 

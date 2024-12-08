@@ -287,4 +287,5 @@ Verbeterpunten
   1. https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar (.banner sectie)
   2. https://www.w3schools.com/cssref/sel_after.php Dropdown menu footer ::after
   3. /* header animatie die verdwijnt en weer verschijnt met scrollen --> bron: Thomas Norden & ChatGPT */
+  4.  <!-- https://www.w3schools.com/tags/tag_tr.asp en chatgpt --> tabel maken voedingswaarde
 </details>
