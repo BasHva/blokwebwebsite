@@ -295,7 +295,7 @@ body {
   overflow-x: auto;
   padding: 0.7em;
   margin-right: 0.1em;
-  margin-top: 5em;
+  margin-top: 0.1em;
   gap: 0.2em; 
 }
 
@@ -698,8 +698,9 @@ body {
 
 .footer-menu ul li a {
   text-decoration: none;
-  font-size: 0.9em;
-  color: #333;
+  font-size: 1em;
+  color: #000000;
+  margin-left: -0.6em;
 }
 
 
@@ -822,11 +823,6 @@ header {
 }
 
 /* Product header */
-.product-header {
-  text-align: center;
-  margin: 0 0 2em 0;
-}
-
 .product-header .product-image {
   width: 12.5em;
   margin-bottom: 2em;
@@ -880,12 +876,6 @@ header {
   box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.1);
 }
 
-.related-grid {
-  display: grid;
-  gap: 1em;
-  margin-top: 1em;
-}
-
 .related-item {
   text-align: center;
 }
@@ -931,7 +921,7 @@ header {
   margin-top: 3em;
 }
 
-/* Vegan en Nutri-Score logo's */
+
 .vegan-logo {
   width: 2em;
   height: auto;
@@ -941,12 +931,13 @@ header {
   width: 4em;
   height: auto;
 }
-/* Algemene instellingen */
+
+
 .product-image {
-  width: 12.5em; /* Geschikte breedte in em */
+  width: 12.5em; 
   height: auto;
   display: block;
-  margin: 0 auto; /* Centraal uitlijnen indien nodig */
+  margin: 0 auto; 
 }
 
 /* Producticonen */
@@ -956,14 +947,6 @@ header {
   align-items: flex-start;
   gap: 0.1em; 
   margin-top: 4.3em; 
-}
-
-/* Prijs en volume sectie */
-.product-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5em; /* Ruimte tussen prijs en volume */
 }
 
 /* Container voor de rechterkant */
@@ -988,37 +971,36 @@ header {
 .product-volume {
   font-size: 1em;
   color: #666;
-  margin-top: -1em;
+  margin-top: 0.1em;
   font-weight: 300;
 }
 
-
 .nutri-score-img {
-  width: 6.5em; /* Dynamische breedte */
+  width: 6.5em; 
   height: auto;
 }
 
 .nutri-score-link {
-  font-size: 1em; /* Consistente tekstgrootte */
-  color: #00ADE6; /* Blauwe kleur */
+  font-size: 1em; 
+  color: #00ADE6;
   text-decoration: none;
   font-weight: 300;
 }
 
 .nutri-score-section {
-  display: flex; /* Flexbox toepassen */
-  align-items: center; /* Alles op dezelfde lijn */
-  gap: 0.5em; /* Ruimte tussen de afbeelding en de tekst */
-  margin-top: 2.2em; /* Zet de hele sectie iets naar onder */
+  display: flex; 
+  align-items: center; 
+  gap: 0.5em; 
+  margin-top: 2.2em; 
 }
 
 /* Sectie: Productbeschrijving */
 .product-description {
-  margin: 0 1em; /* Ruimte rondom de sectie */
+  margin: 0 1em;
 }
 
 .description-list {
-  list-style: none; /* Verwijdert standaard opsommingstekens */
+  list-style: none; 
   padding: 0;
   margin: 0;
 }
@@ -1026,7 +1008,7 @@ header {
 .description-list li {
   position: relative;
   margin-bottom: 0.5em;
-  padding-left: 1.5em; /* Ruimte voor opsommingsteken */
+  padding-left: 1.5em; 
   line-height: 1.3em;
 }
 
@@ -1157,14 +1139,13 @@ header {
   align-items: flex-start;  
 }
 
-/* Header */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Sectie: Algemene Productdetails */
+/* Productdetails */
 .product-details {
   display: flex;
   flex-direction: column;
@@ -1186,7 +1167,6 @@ header {
 }
 
 /* ingredienten sectie */
-
 .ingredients-info {
   display: grid; 
   max-width: 40em; 
@@ -1224,7 +1204,7 @@ header {
 }
 
 .details-list li:first-child {
-  margin-bottom: 1.4em; /* Voeg ruimte onder de eerste regel */
+  margin-bottom: 1.4em; 
 }
 
 .details-list {
@@ -1245,10 +1225,9 @@ section .allergie {
 }
 
 /* related sectie */
-
 .related-grid {
   display: grid;
-  grid-template-columns: 1fr; /* een kolom  */
+  grid-template-columns: 1fr; 
   gap: 0.1em; 
 }
 
@@ -1257,7 +1236,7 @@ section .allergie {
   align-items: center;
   justify-content: space-between;
   padding: 1em;
-  border-bottom: 1px solid #ddd; /* Lijn onder elk item */
+  border-bottom: 1px solid #ddd; 
 }
 
 .product-img {
@@ -1276,12 +1255,10 @@ section .allergie {
   display: inline; 
 }
 
-
 .product-name {
   margin: 0;
   font-size: 1em;
 }
-
 
 .buttonblauw {
   width: 2.4em;
@@ -1303,4 +1280,35 @@ section .allergie {
   left: 0.5em;
   font-size: 1em; 
   color: #666;
+}
+
+.invisible-heading {
+  visibility: hidden;
+  display: none; 
+}
+
+  /* Dark thema */
+body.dark-mode {
+  background-color: #000; 
+  color: #fff; 
+}
+
+button.theme-toggle, button.theme-toggle1 {
+  padding: 0.62em 0.93em;
+  font-size: 0.8em;
+  background-color: #00ade6;
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+button.theme-toggle {
+  margin-top: 7em;
+  margin-left: 1em;
+}
+
+button.theme-toggle1 {
+  margin-top: 0.1em;
+  margin-left: 1em;
 }

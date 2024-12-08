@@ -9,41 +9,32 @@
   <link rel="icon" href="images/ahlogo.png" type="image/svg+xml">
 </head>
 <body>
-<!-- Header -->
+
 <header>
   <h1 class="invisible">Albert Heijn</h1> 
 
-<!-- Navigatiebalk -->
+<!-- Nav -->
 <nav id="navbar" class="navigation">
-  <!-- Dropdown menu -->
   <details class="menu-dropdown" aria-labelledby="menu-toggle">
-    <!-- De summary bevat de menu titel en icoon -->
     <summary id="menu-toggle" class="menu-toggle">
       <img src="images/dropdownmenu.png" alt="Menu Icon" class="menu-icon">
       <span class="menu-text">menu</span>
     </summary>
-
-    <!-- Inloggedeeltes of profiel sectie -->
     <section class="login-section">
+      <h2 class="invisible-heading">Login Section</h2>
       <p>Inloggen</p>
     </section>
 
-    <!-- Dropdown menu items -->
+    <!-- Dropdown menu -->
     <ul class="menu-items">
       <li><a href="#" aria-label="Bekijk producten"><img src="images/productendropdown.png" alt="Producten">Producten</a></li>
       <li><a href="#" aria-label="Bekijk bonus"><img src="images/bonusdropdown.png" alt="Bonus">Bonus</a></li>
       <li><a href="#" aria-label="Bekijk recepten"><img src="images/receptendropdown.png" alt="Recepten">Recepten</a></li>
-
-      <!-- Scheidingsruimte -->
       <li class="divider" role="separator"></li>
-
       <li><a href="#" aria-label="Bekijk mijn profiel"><img src="images/mijnprofieldropdown.png" alt="Mijn profiel">Mijn profiel</a></li>
       <li><a href="#" aria-label="Bekijk online bestellen"><img src="images/onlinebestellendropdown.png" alt="Online bestellen">Online bestellen</a></li>
       <li><a href="#" aria-label="Bekijk win- en spaaracties"><img src="images/winspaaractiedropdown.png" alt="Win en spaaracties">Win en spaaracties</a></li>
-
-      <!-- Scheidingsruimte -->
       <li class="divider" role="separator"></li>
-
       <li><a href="#" aria-label="Bekijk winkels"><img src="images/winkelsdropdown.png" alt="Winkels">Winkels</a></li>
       <li><a href="#" aria-label="Bekijk zakelijk"><img src="images/zakelijkdropdown.png" alt="Zakelijk">Zakelijk</a></li>
       <li><a href="#" aria-label="Bekijk klantenservice"><img src="images/klantenservicedropdown.png" alt="Klantenservice">Klantenservice</a></li>
@@ -51,12 +42,11 @@
       <li><a href="#" aria-label="Bekijk over AH"><img src="images/overahdropdown.png" alt="Over AH">Over AH</a></li>
     </ul>
   </details>
-
-        <!-- Logo -->
         <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
 
-        <!-- Rechterkant nav -->
+
         <section class="nav-right">
+          <h2 class="invisible-heading">Navigation Right</h2>
           <ul class="icon-list">
             <li>
               <a href="#" aria-label="Profiel">
@@ -71,7 +61,7 @@
             <li class="winkelmandje">
             <a href="#" aria-label="Winkelmandje">
               <img src="images/winkelmandjel.png" alt="Winkelmandje" class="icon">
-              <span class="prijs">0.00</span> <!-- Toegevoegde tekst voor prijs -->
+              <span class="prijs">0.00</span> 
             </a>
             </li>
           </ul>
@@ -100,9 +90,11 @@
     </div>
   </header> <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
    <main>
-      
-    <!-- Banner sectie -->
+
+    <button class="theme-toggle" onclick="myFunction()">Verander achtergrondkleur</button>
+    <!-- Banner -->
     <section class="banner">
+      <h2 class="invisible-heading">Banner Section</h2>
       <article>
         <h2>Alles voor het leukste feest van het jaar</h2>
         <img src="images/sinterklaasah.png" alt="Sinterklaas banner" class="banner-image">
@@ -119,9 +111,9 @@
       </article>
     </section>
 
-
-      <!-- Acties sectie -->
+      <!-- Acties -->
       <section class="actie-sectie">
+        <h2 class="invisible-heading">Actie Sectie</h2>
         <article>
           <h2>Een krachtig blond Belgisch bier met zachte smaak</h2>
           <img src="images/cornetbierimage.png" alt="Cornet bier actie">
@@ -132,25 +124,28 @@
         </article>
       </section>
 
-      <!-- Categorie sectie -->
+      <!-- Categorie -->
       <section class="categories">
         <div class="categories-header">
           <h2>Shop per categorie</h2>
           <h3>Bekijk alle categorieën</h3>
         </div>
         <section class="category-slider">
+          <h2 class="invisible-heading">Categorie Slider</h2>
           <article class="category-item">
+            <h3 class="invisible-heading">Categorie Item</h3>
             <img src="images/shoppercategorie1.jpg" alt="Eerder gekocht">
             <p>Eerder gekocht</p>
           </article>
           <article class="category-item">
+            <h3 class="invisible-heading">Categorie Item</h3>
             <img src="images/shoppercategorie2.jpg" alt="Aardappel, groente en fruit">
             <p>Aardappel, groente en fruit</p>
           </article>
         </section>
       </section>
 
-<!-- Bonus sectie -->
+<!-- Bonus -->
 <section class="bonus">
   <div class="bonus-header">
     <h2>Voor jou in de bonus</h2>
@@ -159,8 +154,10 @@
   </div>
   <div class="bonus-slider">
     <article class="bonus-item">
+      <h2 class="invisible-heading">Bonus Item</h2>
       <img src="images/smintjes.jpg" alt="Sportlife Mints">
       <section class="korting">
+        <h2 class="invisible-heading">Korting</h2>
         <p>50% KORTING</p>
       </section>
       <div class="prijs-info">
@@ -174,8 +171,10 @@
     </article>
 
     <article class="bonus-item">
+      <h2 class="invisible-heading">Bonus Item</h2>
       <img src="images/vencodrop.jpg" alt="Sportlife Mints">
       <section class="korting">
+        <h2 class="invisible-heading">Korting</h2>
         <p>voor 1.99</p>
       </section>
       <div class="prijs-info">
@@ -191,8 +190,8 @@
 </section> 
 </main>
 
+<!-- footer -->
     <footer class="footer">
-      <!-- Footer menu -->
       <ul class="footer-menu">
         <li>
           <details>
@@ -279,8 +278,8 @@
         </li>
       </ul>
 
-      <!-- Social media links -->
       <section class="footer-socials">
+        <h2 class="invisible-heading">Social Media</h2>
         <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
         <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
         <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
@@ -289,7 +288,6 @@
         <a href="#" aria-label="Albert Heijn"><img src="images/ah.png" alt="Albert Heijn"></a>
       </section>
 
-      <!-- Footer links -->
       <nav class="footer-links">
         <ul>
           <li><a href="#">Algemene voorwaarden</a></li>
@@ -302,8 +300,8 @@
         </ul>
       </nav>
 
-      <!-- Disclaimer sectie -->
       <section class="footer-disclaimer">
+        <h2 class="invisible-heading">Disclaimer</h2>
         <img src="images/nix18.png" alt="NIX18-logo">
         <p>
           &lt;25 jaar? Laat je legitimatie zien!<br> &lt;18 jaar verkopen wij
@@ -311,8 +309,8 @@
         </p>
       </section>
 
-      <!-- Footer betalingsopties -->
       <section class="footer-payments">
+        <h2 class="invisible-heading">Betalingsmethoden</h2>
         <img src="images/ideal.png" alt="iDeal">
         <img src="images/pin.png" alt="Pin">
         <img src="images/legaalhandelen.png" alt="Legaal handelen">
@@ -321,7 +319,6 @@
       </section>
     </footer>
 
-    <!-- JavaScript -->
     <script src="scripts/script.js"></script>
   </body>
 </html>

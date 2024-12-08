@@ -56,35 +56,55 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   Homepagina:
-  -Screenreader noemt alle dingen die in de website naar voren moeten komen op. 
+  -Screenreader noemt alle dingen die in de website naar voren moeten komen op, alleen gaat het bij de decoratieve afbeeldingen soms fout en zijn sommige stukjes lastig met een screenreader te bereiken.. 
   -Was voor mij allemaal vrij helder om de homepagina met de screenreader te gebruiken.
 
   Productpagina:
   -Screenreader leest alle onderdelen goed voor en snapt ook dat de screenreader bij afbeeldingen uitleg geeft.
-   Zo wordt de ALT ook goed gebruikt en voorgelezen.
+   Zo wordt de ALT bij de images waar het moet goed gebruikt en voorgelezen, maar bij decoratieve afbeeldingen niet altijd en gaat dit fout.
   -Was voor mij allemaal vrij helder om de product pagina met de screenreader te gebruiken.
 
 
-  WCAG CHECKLIST: (VOOR AH.NL)
 
-Algemeen
-  HTML-validatie: De HTML-code bevat geen fouten.
-  Alt-teksten: Alle afbeeldingen hebben bijbehorende goede alt-teksten.
-  Focusstijl: Interactieve elementen hebben een zichtbare en duidelijke focusstijl.
-  Toetsenbordnavigatie: Over het algemeen werkt de toetsenbordnavigatie goed, maar sommige menu-opties zijn lastig te bereiken met alleen het toetsenbord.
+WCAG CHECKLIST: (VOOR AH.NL)
 
-Problemen
-  Logische heading-structuur: Niet alle koppen staan in de juiste volgorde, wat het lastig maakt om de website met een screenreader te gebruiken.
-  Decoratieve afbeeldingen: Sommige afbeeldingen die een decoratief doel hebben, worden onnodig voorgelezen.
-  Formuliervelden: Een paar invoervelden missen duidelijke labels, wat verwarrend is voor de screenreader.
-  Skip-links: De skip-link is aanwezig, maar niet altijd goed zichtbaar.
-  Contrastproblemen: Sommige teksten hebben te weinig kleurcontrast, vooral blauwe tekst op een witte achtergrond.
+--ALGEMEEN--
+HTML-validatie:
+De HTML-code heeft wel wat fouten, hierdoor werkt de website niet 100% goed voor iedereen.
 
-Verbeterpunten
-  Heading-structuur: Koppen moeten logische geordend zijn.
-  Alt-attributen: Lege alt voor decoratie afbeeldingen
-  Labels voor invoervelden: Duidelijke labels aan formulieren. 
-  Kleurcontrast: Kleuren aanpassen naar toegankelijkheid.
+Alt-teksten:
+Sommige afbeeldingen hadden een rare alt text wat niet goed werd voorgelezen door de screenreader. Toen ik in de code ging checken klopte het bij sommige images bijvoorbeeld wel en sommige andere objecten niet.
+
+Toetsenbordnavigatie:
+De website moet makkelijk met het toetsenbord te navigeren zijn en dit is niet 100% het geval. Sommige menu's zijn nog lastig te bereiken zonder muis.
+
+
+--Problemen--
+Logische heading-structuur:
+De koppen staan niet altijd in de juiste volgorde, wat het moeilijk maakt om met een screenreader de pagina te lezen en snappen.
+
+Decoratieve afbeeldingen:
+Sommige afbeeldingen worden zonder dat het moet voorgelezen door de screenreader. Decoratieve afbeeldingen moeten een leeg alt-tekst hebben en dit is nu niet zo.
+
+Formuliervelden:
+Sommige invulvelden missen labels, wat verwarrend is.
+
+Skip-links:
+De skip-link is niet altijd goed zichtbaar, hierdoor kan je moeilijk snel naar inhoud springen.
+
+Contrastproblemen:
+Sommige stukjes hebben een raar kleurcontrast. Het lijkt mij voor een kleurenblind persoon best pittig om dat te kunnen lezen.
+
+
+--Verbeterpunten--
+Heading-structuur verbeteren:
+Zorg ervoor dat de koppen logisch geordend zijn, zodat de website makkelijker te begrijpen en te lezen is met een screenreader.
+
+Alt-teksten voor decoratieve afbeeldingen:
+Alle alt-teksten moeten leeg voor decoratieve afbeeldingen want nu slaat de screenreader ze niet allemaal over wat verwarrend is.
+
+Duidelijke labels voor invoervelden:
+Alle invulvelden moeten duidelijke labels hebben zodat mensen zelf ook weten wat ze moeten invullen.
 
 </details>
 
@@ -277,7 +297,7 @@ Verbeterpunten
 
 ## Bronnenlijst
 
-<details open>
+<details>
   <summary>continu bijhouden terwijl je werkt</summary>
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 

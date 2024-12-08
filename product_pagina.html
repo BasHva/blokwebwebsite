@@ -9,11 +9,10 @@
   <link rel="icon" href="images/ahlogo.png" type="image/svg+xml">
 </head>
 <body>
-  <!-- Header -->
   <header>
     <h1 class="invisible">Albert Heijn</h1>
 
-    <!-- Navigatiebalk -->
+    <!-- Nav -->
     <nav id="navbar" class="navigation">
       <details class="menu-dropdown" aria-labelledby="menu-toggle">
         <summary id="menu-toggle" class="menu-toggle">
@@ -22,9 +21,12 @@
         </summary>
 
         <section class="login-section">
+          <h2 class="invisible-heading">Inloggen</h2>
           <p>Inloggen</p>
         </section>
 
+        
+    <!-- dropdownmenu -->
         <ul class="menu-items">
           <li><a href="#"><img src="images/productendropdown.png" alt="Producten">Producten</a></li>
           <li><a href="#"><img src="images/bonusdropdown.png" alt="Bonus">Bonus</a></li>
@@ -42,11 +44,10 @@
         </ul>
       </details>
 
-      <!-- Logo -->
       <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
 
-      <!-- Rechterkant navigatie -->
       <section class="nav-right">
+        <h2 class="invisible-heading">Navigatie</h2>
         <ul class="icon-list">
           <li><a href="#"><img src="images/profiel.png" alt="Profiel" class="icon"></a></li>
           <li><a href="#"><img src="images/favorieten.png" alt="Favorieten" class="icon"></a></li>
@@ -79,14 +80,13 @@
   </header>
 
   <main>
-      <!-- Navigatie links -->
       <nav class="header-links">
         <a href="#" class="back-link">&lt; Terug</a>
         <a href="#" class="all-link">Alles van AH &gt;</a>
       </nav>
 
-    <!-- Product Header -->
     <section class="product-header">
+      <h2 class="invisible-heading">Product Informatie</h2>    
       <div class="product-icons">
         <img src="images/vegan.png" alt="Vegan logo" class="vegan-logo">
         <img src="images/nutriscore.png" alt="Nutri-Score B" class="nutri-score">
@@ -102,20 +102,20 @@
       </div>
     </section>
 
+    <button class="theme-toggle1" onclick="myFunction()">Verander achtergrondkleur</button>
     <div class="product-details">
       <h2 class="product-title">AH Halfvolle melk</h2>
       <p class="product-subtitle">Prijs per LT € 1,25</p>
       <p class="add-to-cart">Voeg toe +</p>
 
-      <!-- Nutri-Score Sectie -->
       <div class="nutri-score-section">
         <img src="images/nutriscore.png" alt="Nutri-Score B" class="nutri-score-img">
         <a href="#" class="nutri-score-link">Wat is Nutri-Score?</a>
       </div>
     </div>
 
-          <!-- over product Sectie -->
-    <section class="product-highlights">
+<section class="product-highlights">
+  <h2 class="invisible-heading">Product Highlights</h2>
       <p>Verse halfvolle melk, lekker voor ieder moment van de dag.</p>
       <div class="highlight-list">
         <ul>
@@ -125,7 +125,6 @@
       </div>
     </section>
     
-          <!-- omschrijving product Sectie -->
     <article class="product-description">
       <h2>Omschrijving</h2>
       <ul class="description-list">
@@ -266,6 +265,7 @@
       <h2>Andere soorten</h2>
       <div class="related-grid">
         <article class="related-item">
+          <h2 class="invisible-heading">Related Item</h2>
           <img src="images/ahmelk05.png" alt="AH Halfvolle melk 0.5 liter" class="product-img">
           <div class="related-info">
             <p class="product-name">AH Halfvolle melk</p>
@@ -275,6 +275,7 @@
           <img src="images/blauwebutton.png" alt="Button image" class="buttonblauw">
         </article>
         <article class="related-item">
+          <h2 class="invisible-heading">Related Item</h2>
           <img src="images/ahmelk15.png" alt="AH Halfvolle melk 1.5 liter" class="product-img">
           <div class="related-info">
             <p class="product-name">AH Halfvolle melk</p>
@@ -284,6 +285,7 @@
           <img src="images/blauwebutton.png" alt="Button image" class="buttonblauw">
         </article>
         <article class="related-item">
+          <h2 class="invisible-heading">Related Item</h2>
           <img src="images/ahmelkcalsium.png" alt="AH Halfvolle melkdrank extra calcium 1 liter" class="product-img">
           <div class="related-info">
             <p class="product-name">AH Halfvolle melkdrank extra calcium</p>
@@ -296,9 +298,8 @@
     </section>        
   </main>
 
-
+  <!-- Footer -->
 <footer class="footer">
-  <!-- Footer menu -->
   <ul class="footer-menu">
     <li>
       <details>
@@ -385,8 +386,8 @@
     </li>
   </ul>
 
-  <!-- Social media links -->
   <section class="footer-socials">
+    <h2 class="invisible-heading">Footer Socials</h2>
     <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
     <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
     <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
@@ -395,7 +396,6 @@
     <a href="#" aria-label="Albert Heijn"><img src="images/ah.png" alt="Albert Heijn"></a>
   </section>
 
-  <!-- Footer links -->
   <nav class="footer-links">
     <ul>
       <li><a href="#">Algemene voorwaarden</a></li>
@@ -408,8 +408,8 @@
     </ul>
   </nav>
 
-  <!-- Disclaimer sectie -->
   <section class="footer-disclaimer">
+    <h2 class="invisible-heading">Footer Disclaimer</h2>
     <img src="images/nix18.png" alt="NIX18-logo">
     <p>
       &lt;25 jaar? Laat je legitimatie zien!<br> &lt;18 jaar verkopen wij
@@ -417,8 +417,8 @@
     </p>
   </section>
 
-  <!-- Footer betalingsopties -->
   <section class="footer-payments">
+    <h2 class="invisible-heading">Footer Payments</h2>
     <img src="images/ideal.png" alt="iDeal">
     <img src="images/pin.png" alt="Pin">
     <img src="images/legaalhandelen.png" alt="Legaal handelen">
@@ -427,7 +427,6 @@
   </section>
 </footer>
 
-<!-- JavaScript -->
 <script src="scripts/script.js"></script>
 </body>
 </html>
