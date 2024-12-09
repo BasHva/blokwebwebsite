@@ -1,5 +1,4 @@
-// Header animatie
-// bron: Thomas Norden & ChatGPT
+// -------------------- HEADER ANIMATIE --------------------
 let lastScrollY = window.scrollY;
 let header = document.querySelector('#Zoekbalk');
 
@@ -16,89 +15,61 @@ window.addEventListener('scroll', () => {
   lastScrollY = window.scrollY;
 });
 
-// Haal de kleurkiezer en knop op
+// -------------------- KLEURPICKER --------------------
 const colorPicker = document.getElementById('colorPicker');
 const applyColorBtn = document.getElementById('applyColorBtn');
 
-// Voeg een event listener toe voor de knop
+// Kleur toepassen bij klikken
 applyColorBtn.addEventListener('click', () => {
-  // Haal de geselecteerde kleur op en pas de achtergrondkleur aan
   document.body.style.backgroundColor = colorPicker.value;
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-// logo animatie
+// -------------------- LOGO ANIMATIE --------------------
 const logo = document.querySelector('.logo');
 
 logo.addEventListener('click', function() {
   logo.style.transition = 'transform 0.3s ease';
   logo.style.transform = 'translateY(-30px)'; 
 
-
   setTimeout(() => {
-    logo.style.transform = 'translateY(0)'; 
-  }, 300); 
-});  
-// lesstof week 4 animatie + inleiding programmeren & chatgpt
+    logo.style.transform = 'translateY(0)';
+  }, 300);
+});
 
-
-
-// Get the modal
+// -------------------- MODAL --------------------
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
+// Open modal bij klikken
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Sluit modal bij klikken op <span> (x)
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Sluit modal bij klikken buiten de modal
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-// https://www.w3schools.com/howto/howto_css_modals.asp
 
-
+// -------------------- DROPDOWNMENU --------------------
 var deButton = document.querySelector("nav button");
 
 deButton.onclick = toggleMenu;
 
 function toggleMenu() {  
-
   var deNav = document.querySelector("nav");
-
   deNav.classList.toggle("toonMenu");
 }
 
-// DROPDOWNMENU https://codepen.io/shooft/pen/GRbxLYV?editors=0100 BRON!!
-
-
+// -------------------- DARK MODE --------------------
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
-// https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp BRON DARK THEME''
-

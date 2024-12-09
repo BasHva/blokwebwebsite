@@ -326,8 +326,11 @@ De pagina werkt al grotendeels goed, maar ik zal toch nog aan de slag gaan om kl
   Nb. Vermeld de bronnen ook in je code.
 
   1. https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar (.banner sectie)
-  2. https://www.w3schools.com/cssref/sel_after.php Dropdown menu footer ::after
+  2. https://www.w3schools.com/cssref/sel_after.php Dropdown menu footer ::after 
   3. /* header animatie die verdwijnt en weer verschijnt met scrollen --> bron: Thomas Norden & ChatGPT */
   4.  <!-- https://www.w3schools.com/tags/tag_tr.asp en chatgpt --> tabel maken voedingswaarde
   5. animatie = // lesstof week 4 animatie + inleiding programmeren & chatgpt
+  6. color picker https://stackoverflow.com/questions/68062443/how-to-change-background-color-using-color-picker-without-click-on-button
+  7. dark thema https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+  8. dropdown https://codepen.io/shooft/pen/GRbxLYV?editors=0100
 </details>
