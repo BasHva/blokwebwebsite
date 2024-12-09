@@ -293,26 +293,26 @@ De pagina werkt al grotendeels goed, maar ik zal toch nog aan de slag gaan om kl
 </details>
 
 
-
 ## Eindgesprek (week 5)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/homepaginaeinde.png" width="375px" alt="einde homepagina 1">
+  <img src="readme-images/productpaginaeinde.png" width="375px" alt="einde productpagina 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Wat goed ging was vooral het toevoegen van de dropdownmenu. Het was aan het begin erg lastig en ik heb er tot de dag van de deadline nog 5 uur aan gezeten. Het was zo dat er elke keer een zoekbalk glitchde in mijn nav die ik (en de studentassistenten kregen hem niet weg) eerst niet weg kreeg. Dit is toch gelukt en hier ben ik heel blij mee en ook heel trots op!
+  <img src="readme-images/dropdownmenu.png" width="375px" alt="dropdownmenu trots op">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Wanneer je in de productpagina de pagina herlaad is er een glitch in mijn website waardoor er ineens ruimte ontstaat. Wanneer je scrolled naar beneden en omhoog is dit weg. Hier hebben Thomas en ik lang in de les naar gekeken maar ik kreeg dit echt na heel veel uren proberen niet weg. Dit is me dus helaas NIET gelukt :|
+  <img src="readme-images/glitchnietgelukt.png" width="375px" alt="niet gelukt glitch">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ook worden bij de darkmode optie sommige letters niet meekleurend... Dit zou ik als ik meer tijd had gehad wel willen uitwerken. Ik weet wel hoe dit moet.
 </details>
 
 
@@ -325,12 +325,13 @@ De pagina werkt al grotendeels goed, maar ik zal toch nog aan de slag gaan om kl
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar (.banner sectie)
-  2. https://www.w3schools.com/cssref/sel_after.php Dropdown menu footer ::after 
+  1. https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar  = banner sectie
+  2. https://www.w3schools.com/cssref/sel_after.php = dropdown menu footer ::after 
   3. /* header animatie die verdwijnt en weer verschijnt met scrollen --> bron: Thomas Norden & ChatGPT */
-  4.  <!-- https://www.w3schools.com/tags/tag_tr.asp en chatgpt --> tabel maken voedingswaarde
+  4. https://www.w3schools.com/tags/tag_tr.asp en chatgpt = tabel maken voedingswaarde
   5. animatie = // lesstof week 4 animatie + inleiding programmeren & chatgpt
-  6. color picker https://stackoverflow.com/questions/68062443/how-to-change-background-color-using-color-picker-without-click-on-button
-  7. dark thema https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
-  8. dropdown https://codepen.io/shooft/pen/GRbxLYV?editors=0100
+  6. https://stackoverflow.com/questions/68062443/how-to-change-background-color-using-color-picker-without-click-on-button = color picker
+  7. https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp = dark thema
+  8. https://codepen.io/shooft/pen/GRbxLYV?editors=0100 = dropdown menu
+  9. Boodschappenlijstje = chatgpt
 </details>

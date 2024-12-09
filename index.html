@@ -45,7 +45,8 @@
       <li><a href="#"><img src="images/voordeelshopdropdown.png" alt="Voordeelshop">Voordeelshop</a></li>
       <li><a href="#"><img src="images/overahdropdown.png" alt="Over AH">Over AH</a></li>
     </ul>
-  </details>
+  </details> <!-- https://codepen.io/shooft/pen/GRbxLYV?editors=0100 -->
+
         <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
 
 
@@ -95,13 +96,13 @@
   </header> <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
    <main>
 
-    <button class="theme-toggle" onclick="myFunction()">Maak je website donker</button>
+    <button class="theme-toggle" onclick="myFunction()">Maak je website donker</button>     <!-- https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp -->
 
   <!-- Kleurkiezer -->
   <div class="color-picker-container">
     <input type="color" id="colorPicker" class="color-picker">
     <button id="applyColorBtn" class="apply-color-btn">Pas Kleur Toe</button>
-  </div>
+  </div>  <!-- https://stackoverflow.com/questions/68062443/how-to-change-background-color-using-color-picker-without-click-on-button -->
 
     <!-- Banner -->
     <section class="banner">
@@ -120,7 +121,7 @@
           <img src="images/buttonbanner1.png" alt="Button image" class="button-image">
         </a>
       </article>
-    </section>
+    </section>     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar -->
 
       <!-- Acties -->
       <section class="actie-sectie">
@@ -199,6 +200,11 @@
     </article>
   </div> 
 </section> 
+
+<h2>Maak hier je boodschappenlijstje</h2>
+<input type="text" id="taskInput" placeholder="Voeg een taak toe..." >
+<button class="add-button2" onclick="addTask()">Voeg toe</button>
+<ul id="taskList"></ul> <!-- chatgpt -->
 </main>
 
 <!-- footer -->

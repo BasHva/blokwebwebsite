@@ -15,6 +15,9 @@ window.addEventListener('scroll', () => {
   lastScrollY = window.scrollY;
 });
 
+// Header animatie die verdwijnt en weer verschijnt met scrollen --> bron: Thomas Norden & ChatGPT 
+
+
 // -------------------- KLEURPICKER --------------------
 const colorPicker = document.getElementById('colorPicker');
 const applyColorBtn = document.getElementById('applyColorBtn');
@@ -23,6 +26,9 @@ const applyColorBtn = document.getElementById('applyColorBtn');
 applyColorBtn.addEventListener('click', () => {
   document.body.style.backgroundColor = colorPicker.value;
 });
+
+// https://stackoverflow.com/questions/68062443/how-to-change-background-color-using-color-picker-without-click-on-button
+
 
 // -------------------- LOGO ANIMATIE --------------------
 const logo = document.querySelector('.logo');
@@ -36,6 +42,9 @@ logo.addEventListener('click', function() {
   }, 300);
 });
 
+//lesstof week 4 animatie + inleiding programmeren & chatgpt
+
+
 // -------------------- MODAL --------------------
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
@@ -46,17 +55,20 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// Sluit modal bij klikken op <span> (x)
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// Sluit modal bij klikken buiten de modal
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+
+// https://www.w3schools.com/howto/howto_css_modals.asp
+
+
+
 
 // -------------------- DROPDOWNMENU --------------------
 var deButton = document.querySelector("nav button");
@@ -68,8 +80,27 @@ function toggleMenu() {
   deNav.classList.toggle("toonMenu");
 }
 
+// https://codepen.io/shooft/pen/GRbxLYV?editors=0100 
+
+
 // -------------------- DARK MODE --------------------
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
+
+// https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+
+
+// -------------------- BOODSCHAPPENLIJSTJE --------------------
+function addTask() {
+  var taskInput = document.getElementById('taskInput');
+  var taskList = document.getElementById('taskList');
+  
+  var taskItem = document.createElement('li');
+  taskItem.textContent = taskInput.value;
+  taskList.appendChild(taskItem);
+  taskInput.value = '';
+}
+
+// Bron chatgpt //
