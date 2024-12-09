@@ -57,15 +57,6 @@ function toggleMenu() {
   deNav.classList.toggle("toonMenu");
 }
 
-// window.onkeydown = handleKeydown;
-
-// function handleKeydown(event) {
-//   if (event.key == "Escape") {
-//     var deNav = document.querySelector("nav");
-//     deNav.classList.remove("toonMenu");
-//   }
-// }
-
 // DROPDOWNMENU https://codepen.io/shooft/pen/GRbxLYV?editors=0100 BRON!!
 
 
@@ -73,5 +64,4 @@ function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
-
-// https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp BRON DARK THEME
+// https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp BRON DARK THEME''

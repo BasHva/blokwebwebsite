@@ -74,18 +74,60 @@ body {
   left: 0;
   background: none; /* Geen achtergrondkleur */
   border: none; /* Geen rand */
-  cursor: pointer; /* Maak het klikbaar */
   top: 1.2em;
   left: 0.7em;
   z-index: 1;
 }
 
 #goBack img {
-  width: 1.3em; /* Maak het icoon wat kleiner */
+  width: 1.3em; 
 }
 
 .model-content input{
   width: 100%;
+}
+
+.mijn-profiel, .online-bestellen {
+  border-top: 1.5em solid #cccccc28; 
+}
+
+.dropmnu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 2em; 
+  background-color: #ffffff;
+  border-bottom: 1.5em solid #cccccc28; 
+}
+
+.inloggen {
+  color: #00ade6;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  align-self: flex-start;
+  margin-top: -1em;
+}
+
+.close-btn {
+  font-size: 2.2em;
+  background: none;
+  border: none;
+  color: black;
+  align-self: flex-start;
+  margin-top: -1em; 
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Container voor de zoekbalk */
@@ -96,7 +138,7 @@ body {
   padding-top: 1.2em;
   padding-bottom: 1.2em;
   box-shadow: 0em 0.2em 0.3em rgba(0, 0, 0, 0.1);
-  z-index: 2;
+  z-index: 1;
 }
 
 #myBtn {
@@ -738,19 +780,12 @@ body {
   background-color: #ffffff; 
 }
 
-/* Sluitknop (X) */
-.menu-dropdown[open] header .close-icon {
-  font-size: 24px;
-  color: #101010; 
-  cursor: pointer;
-}
-
 /* Lijstcontainer */
 .menu-dropdown[open] ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
+  }
 
 /* Standaard lijst-item */
 .menu-dropdown[open] ul li {
@@ -843,8 +878,23 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2em;
 }
+
+.product-details h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  color: #000;
+  margin-left: -6em;
+}
+
+.product-subtitle {
+  font-size: 1em;
+  color: #888; /* Kleur van de ondertitel, kan worden aangepast */
+  margin-top: 0.2em;
+  text-align: left; /* Zorgt ervoor dat de tekst links uitgelijnd wordt */
+  margin-right: 13.2em;
+}
+
 
 
 /* Product informatie */
@@ -871,23 +921,12 @@ header {
 /* Gerelateerde producten */
 .related-products {
   background: #fff;
-  padding: 1em;
+  padding: 0.5em; 
   border-radius: 0.2em;
   box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.1);
 }
 
-.related-item {
-  text-align: center;
-}
 
-.related-item img {
-  max-width: 6.2em;
-}
-
-.related-item .price {
-  color: #0072ce;
-  font-weight: bold;
-}
 
 /* Navigatie links onderaan */
 .header-links {
@@ -956,28 +995,29 @@ header {
   align-items: flex-end; 
   justify-content: center; 
   height: 100%;
-  padding-left: 2em; 
+  padding-left: 1em; 
 }
 
 /* Styling voor de prijs */
 .product-price {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: bold;
   color: #000;
-  margin-top: 5em;
+  margin-top: 6em;
 }
 
 /* Styling voor het volume */
 .product-volume {
   font-size: 1em;
   color: #666;
-  margin-top: 0.1em;
+  margin-top: -1em;
   font-weight: 300;
 }
 
 .nutri-score-img {
   width: 6.5em; 
   height: auto;
+  margin-left: -6em;
 }
 
 .nutri-score-link {
@@ -985,6 +1025,7 @@ header {
   color: #00ADE6;
   text-decoration: none;
   font-weight: 300;
+  margin-left: 1em;
 }
 
 .nutri-score-section {
@@ -997,6 +1038,7 @@ header {
 /* Sectie: Productbeschrijving */
 .product-description {
   margin: 0 1em;
+  margin-top: 3em;
 }
 
 .description-list {
@@ -1021,16 +1063,31 @@ header {
   top: 0.1em;
 }
 
-/* Sectie: Product Highlights */
-.product-highlights {
-  margin-top: 2em;
+.description-list .highlight-list ul {
+  list-style: none; 
 }
 
-.product-highlights p {
-  margin-bottom: 1.5em;
-  font-size: 1em;
-  margin-left: 0.9em;
+.description-list .highlight-list li {
+  position: relative; 
+  margin-bottom: 0.5em;
+  padding-left: 0.2em; 
 }
+
+.description-list .highlight-list li::before {
+  content: '●'; /* Bron chatgpt */
+  position: absolute;
+  left: -1.3em;
+  top: 0.1em;
+}
+
+.description-list p {
+  padding-left: 1em; 
+  font-size: 1.05em; 
+  margin-top: 1.5em; 
+  line-height: 1.4; 
+}
+
+
 
 /* Sectie: Gedetailleerde Beschrijving */
 .detailed-description {
@@ -1099,13 +1156,20 @@ header {
   color: #555;
 }
 
+.nutrition-info.reference-note {
+  text-align: right; 
+  font-size: 0.75em; 
+  color: #000000; 
+  margin: 0.5em 0;
+  font-weight: 300;
+}
 
 .add-to-cart {
   background-color: #00ADE6;
   color: white;
   padding: 0.9em 8em;
   border-radius: 0.25em;
-  font-size: 1.09m;
+  font-size: 1em;
   font-weight: 300;
   text-align: center;
   align-self: center;
@@ -1145,26 +1209,6 @@ header {
   align-items: center;
 }
 
-/* Productdetails */
-.product-details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0.7em;
-}
-
-.product-details h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.2em;
-  color: #000;
-}
-
-.product-subtitle {
-  font-size: 0.9em;
-  color: #bfbfbf;
-  font-weight: 300;
-  margin: 0 0 2em 0;
-}
 
 /* ingredienten sectie */
 .ingredients-info {
@@ -1224,63 +1268,94 @@ section .allergie {
   margin-bottom: 1.1em; 
 }
 
-/* related sectie */
-.related-grid {
-  display: grid;
-  grid-template-columns: 1fr; 
-  gap: 0.1em; 
+.related-products h2 {
+  font-size: 1.6em;
+  margin-bottom: 1em;
 }
 
-.related-item {
+.related-products .product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.related-products .product-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
-  border-bottom: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
-.product-img {
-  width: 4em; 
+/* Hartje icoon aan de linkerkant */
+.related-products .heart-icon img {
+  width: 2.5em;
   height: auto;
-  object-fit: contain;
   margin-right: 1em;
+  margin-bottom: 6em;
 }
 
-.related-info {
+.related-products .product-center {
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
-  text-align: left;
+  margin-right: 1em; /* Zorgt ervoor dat er wat ruimte tussen de afbeelding en de prijs zit */
 }
 
-.product-price, .product-volume {
-  display: inline; 
+.related-products .product-image {
+  width: 4.5em;
+  height: auto;
+  margin-left: -1em;
 }
 
-.product-name {
-  margin: 0;
+.related-products .product-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Zorgt ervoor dat prijs en volume links uitgelijnd worden */
+  margin-left: 1em; /* Zet wat ruimte tussen de afbeelding en de prijs/volume */
+}
+
+.related-products .product-name {
+  font-size: 1.2em;
+  margin-bottom: -6em; /* Kleine ruimte onder de productnaam */
+}
+
+.related-products .price {
+  font-size: 1.35em;
+  margin-left: -9em;
+}
+
+.related-products .volume {
   font-size: 1em;
+  margin-left: -8.5em;
 }
 
-.buttonblauw {
-  width: 2.4em;
+
+
+.related-products .add-button img {
+  width: 3em;
+  height: auto;
+  margin-top: 5em;
+}
+
+
+/* Toevoegknop rechts */
+.add-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.add-button img {
+  width: 2.5em;
   height: auto;
 }
 
-.product-price {
-  display: inline-block; 
-  font-size: 1.5em; 
-  position: relative; 
-  top: 0.8em;
-  font-weight: 600;
-}
 
-.product-volume {
-  display: inline-block; 
-  position: relative; 
-  top: 0.1em; 
-  left: 0.5em;
-  font-size: 1em; 
-  color: #666;
-}
 
 .invisible-heading {
   visibility: hidden;
@@ -1312,3 +1387,4 @@ button.theme-toggle1 {
   margin-top: 0.1em;
   margin-left: 1em;
 }
+

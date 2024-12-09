@@ -25,17 +25,19 @@
           <p>Inloggen</p>
         </section>
 
+        <div class="dropmnu">
+          <a href="#" class="inloggen">Inloggen</a>
+          <button class="close-btn" aria-label="Sluiten">×</button>
+        </div>
         
     <!-- dropdownmenu -->
         <ul class="menu-items">
           <li><a href="#"><img src="images/productendropdown.png" alt="Producten">Producten</a></li>
           <li><a href="#"><img src="images/bonusdropdown.png" alt="Bonus">Bonus</a></li>
           <li><a href="#"><img src="images/receptendropdown.png" alt="Recepten">Recepten</a></li>
-          <li class="divider" role="separator"></li>
-          <li><a href="#"><img src="images/mijnprofieldropdown.png" alt="Mijn profiel">Mijn profiel</a></li>
-          <li><a href="#"><img src="images/onlinebestellendropdown.png" alt="Online bestellen">Online bestellen</a></li>
+          <li class="mijn-profiel"><a href="#"><img src="images/mijnprofieldropdown.png" alt="Mijn profiel">Mijn profiel</a></li>
+          <li class="online-bestellen"><a href="#"><img src="images/onlinebestellendropdown.png" alt="Online bestellen">Online bestellen</a></li>
           <li><a href="#"><img src="images/winspaaractiedropdown.png" alt="Win en spaaracties">Win en spaaracties</a></li>
-          <li class="divider" role="separator"></li>
           <li><a href="#"><img src="images/winkelsdropdown.png" alt="Winkels">Winkels</a></li>
           <li><a href="#"><img src="images/zakelijkdropdown.png" alt="Zakelijk">Zakelijk</a></li>
           <li><a href="#"><img src="images/klantenservicedropdown.png" alt="Klantenservice">Klantenservice</a></li>
@@ -43,7 +45,6 @@
           <li><a href="#"><img src="images/overahdropdown.png" alt="Over AH">Over AH</a></li>
         </ul>
       </details>
-
       <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
 
       <section class="nav-right">
@@ -114,7 +115,7 @@
       </div>
     </div>
 
-<section class="product-highlights">
+<section class="description-list">
   <h2 class="invisible-heading">Product Highlights</h2>
       <p>Verse halfvolle melk, lekker voor ieder moment van de dag.</p>
       <div class="highlight-list">
@@ -139,7 +140,7 @@
     <section class="item-details">
       <h2>Inhoud en gewicht</h2>
       <ul class="details-list">
-        <li>1 Liter</li>
+        <li>1 Liter ℮</li>
         <li><strong>Portiegrootte:</strong> 200 milliliter</li>
         <li><strong>Aantal porties:</strong> 5</li>
       </ul>
@@ -255,49 +256,52 @@
           </tr>
         </tbody>
       </table>
-      <p class="reference-note">
-        * Referentie-Inname van een gemiddelde volwassene is 8400 kJ / 2000 kcal
-      </p>
+      <p class="reference-note"> * Referentie-Inname van een gemiddelde volwassene is 8400 kJ / 2000 kcal</p>
     </section>      <!-- https://www.w3schools.com/tags/tag_tr.asp en chatgpt -->
 
     
     <section class="related-products">
       <h2>Andere soorten</h2>
-      <div class="related-grid">
-        <article class="related-item">
-          <h2 class="invisible-heading">Related Item</h2>
-          <img src="images/ahmelk05.png" alt="AH Halfvolle melk 0.5 liter" class="product-img">
-          <div class="related-info">
+      <ul class="product-list">
+        <!-- Product 1 -->
+        <li class="product-item">
+          <div class="heart-icon">
+            <img src="images/favorieten.png" alt="Favoriet">
+          </div>
+          <div class="product-center">
+            <img src="images/ahmelk05.png" alt="AH Halfvolle melk 0.5 liter" class="product-image">
+          </div>
+          <div class="product-right">
             <p class="product-name">AH Halfvolle melk</p>
-            <p class="product-price">0.89</p>
+            <p class="product-price">€0.89</p>
             <p class="product-volume">0,5 l</p>
           </div>
-          <img src="images/blauwebutton.png" alt="Button image" class="buttonblauw">
-        </article>
-        <article class="related-item">
-          <h2 class="invisible-heading">Related Item</h2>
-          <img src="images/ahmelk15.png" alt="AH Halfvolle melk 1.5 liter" class="product-img">
-          <div class="related-info">
+          <button class="add-button" aria-label="Toevoegen aan winkelwagen">
+            <img src="images/blauwebutton.png" alt="Toevoegen">
+          </button>
+        </li>
+    
+        <!-- Product 2 -->
+        <li class="product-item">
+          <div class="heart-icon">
+            <img src="images/favorieten.png" alt="Favoriet">
+          </div>
+          <div class="product-center">
+            <img src="images/ahmelk15.png" alt="AH Halfvolle melk 1.5 liter" class="product-image">
+          </div>
+          <div class="product-right">
             <p class="product-name">AH Halfvolle melk</p>
-            <p class="product-price">1.75</p>
+            <p class="product-price">€1.75</p>
             <p class="product-volume">1,5 l</p>
           </div>
-          <img src="images/blauwebutton.png" alt="Button image" class="buttonblauw">
-        </article>
-        <article class="related-item">
-          <h2 class="invisible-heading">Related Item</h2>
-          <img src="images/ahmelkcalsium.png" alt="AH Halfvolle melkdrank extra calcium 1 liter" class="product-img">
-          <div class="related-info">
-            <p class="product-name">AH Halfvolle melkdrank extra calcium</p>
-            <p class="product-price">1.49</p>
-            <p class="product-volume">1 l</p>
-          </div>
-          <img src="images/blauwebutton.png" alt="Button image" class="buttonblauw">
-        </article>
-      </div>
-    </section>        
+          <button class="add-button" aria-label="Toevoegen aan winkelwagen">
+            <img src="images/blauwebutton.png" alt="Toevoegen">
+          </button>
+        </li>
+      </ul>
+    </section>
   </main>
-
+    
   <!-- Footer -->
 <footer class="footer">
   <ul class="footer-menu">
@@ -403,8 +407,8 @@
       <li><a href="#">Bonusvoorwaarden</a></li>
       <li><a href="#">Privacybeleid</a></li>
       <li><a href="#">Cookiebeleid</a></li>
-      <li><a href="#">Over AH</a></li>
-      <li><a href="product_pagina.html">Kwetsbaarheid melden</a></li>
+      <li><a href="">Over AH</a></li>
+      <li><a href="index.html">Kwetsbaarheid melden</a></li>
     </ul>
   </nav>
 
