@@ -230,9 +230,30 @@ Alle invulvelden moeten duidelijke labels hebben zodat mensen zelf ook weten wat
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Dit moet ik nog verwerken. Heb enkel het document ingevuld maar moet het nog documenteren.
-</details>
+**WCAG Checklist voor AH.nl**
 
+**Algemeen:**
+- HTML-validatie: De meeste HTML is in orde, maar ik moet nog een aantal info's fixen en die info's zijn dat er geen h2 is in een section bijvoorbeeld. Deze moet ik onzichtbaar maken zodat het wel duidelijk is voor de screenreader.
+
+- Alt-teksten: Veel afbeeldingen hebben goede alt-teksten. Sommige nog iets duidelijker maken
+
+- Toetsenbordnavigatie: De website is voor het grootste deel wel goed te bereiken met het toetsenbord. Sommige stukjes verbetering met hoe ik zelf ermee omga want ik vind het zelf erg lastig.
+
+**Problemen:**
+- Heading-structuur: Koppen staan nu wel in de juiste volgorde wat voorhene nog niet zo was. Dit is makkelijker te lezen voor de screenreader.
+
+- Decoratieve afbeeldingen: Leest geen decoratieve afbeeldingen voor
+
+- Contrast: VOor mensen met een visuele beperking moet ik sommige kleuren contrasten iets duidelijker maken had ik door. Soms had ik zelf moeite met een paar stukjes, laat staan iemand met een visuele beperking.
+
+**Verbeterpunten:**
+- Verbeter koppenstructuur: Code iets logischer ordenen en koppen ook.
+
+- Alt-teksten voor decoratieve afbeeldingen: Bij decoratieve images moet ik een lege alt invullen en bij niet decoratieve images een alt die de image omschrijft en nog aria labels toevoegen bij sommige onderdelen.
+
+De pagina werkt al grotendeels goed, maar ik zal toch nog aan de slag gaan om kleine dingen nog te verbeteren om het optimaal te maken voor alle gebruikers ook met een heftigere beperking. 
+
+</details>
 
 
 ## Voortgang 3 (week 4)
@@ -308,4 +329,5 @@ Alle invulvelden moeten duidelijke labels hebben zodat mensen zelf ook weten wat
   2. https://www.w3schools.com/cssref/sel_after.php Dropdown menu footer ::after
   3. /* header animatie die verdwijnt en weer verschijnt met scrollen --> bron: Thomas Norden & ChatGPT */
   4.  <!-- https://www.w3schools.com/tags/tag_tr.asp en chatgpt --> tabel maken voedingswaarde
+  5. animatie = // lesstof week 4 animatie + inleiding programmeren & chatgpt
 </details>

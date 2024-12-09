@@ -25,21 +25,25 @@
       <p>Inloggen</p>
     </section>
 
-    <!-- Dropdown menu -->
+    <div class="dropmnu">
+      <a href="#" class="inloggen">Inloggen</a>
+      <button class="close-btn" aria-label="Sluiten">×</button>
+    </div>
+    
+
+    <!-- dropdownmenu -->
     <ul class="menu-items">
-      <li><a href="#" aria-label="Bekijk producten"><img src="images/productendropdown.png" alt="Producten">Producten</a></li>
-      <li><a href="#" aria-label="Bekijk bonus"><img src="images/bonusdropdown.png" alt="Bonus">Bonus</a></li>
-      <li><a href="#" aria-label="Bekijk recepten"><img src="images/receptendropdown.png" alt="Recepten">Recepten</a></li>
-      <li class="divider" role="separator"></li>
-      <li><a href="#" aria-label="Bekijk mijn profiel"><img src="images/mijnprofieldropdown.png" alt="Mijn profiel">Mijn profiel</a></li>
-      <li><a href="#" aria-label="Bekijk online bestellen"><img src="images/onlinebestellendropdown.png" alt="Online bestellen">Online bestellen</a></li>
-      <li><a href="#" aria-label="Bekijk win- en spaaracties"><img src="images/winspaaractiedropdown.png" alt="Win en spaaracties">Win en spaaracties</a></li>
-      <li class="divider" role="separator"></li>
-      <li><a href="#" aria-label="Bekijk winkels"><img src="images/winkelsdropdown.png" alt="Winkels">Winkels</a></li>
-      <li><a href="#" aria-label="Bekijk zakelijk"><img src="images/zakelijkdropdown.png" alt="Zakelijk">Zakelijk</a></li>
-      <li><a href="#" aria-label="Bekijk klantenservice"><img src="images/klantenservicedropdown.png" alt="Klantenservice">Klantenservice</a></li>
-      <li><a href="#" aria-label="Bekijk voordeelshop"><img src="images/voordeelshopdropdown.png" alt="Voordeelshop">Voordeelshop</a></li>
-      <li><a href="#" aria-label="Bekijk over AH"><img src="images/overahdropdown.png" alt="Over AH">Over AH</a></li>
+      <li><a href="#"><img src="images/productendropdown.png" alt="Producten">Producten</a></li>
+      <li><a href="#"><img src="images/bonusdropdown.png" alt="Bonus">Bonus</a></li>
+      <li><a href="#"><img src="images/receptendropdown.png" alt="Recepten">Recepten</a></li>
+      <li class="mijn-profiel"><a href="#"><img src="images/mijnprofieldropdown.png" alt="Mijn profiel">Mijn profiel</a></li>
+      <li class="online-bestellen"><a href="#"><img src="images/onlinebestellendropdown.png" alt="Online bestellen">Online bestellen</a></li>
+      <li><a href="#"><img src="images/winspaaractiedropdown.png" alt="Win en spaaracties">Win en spaaracties</a></li>
+      <li><a href="#"><img src="images/winkelsdropdown.png" alt="Winkels">Winkels</a></li>
+      <li><a href="#"><img src="images/zakelijkdropdown.png" alt="Zakelijk">Zakelijk</a></li>
+      <li><a href="#"><img src="images/klantenservicedropdown.png" alt="Klantenservice">Klantenservice</a></li>
+      <li><a href="#"><img src="images/voordeelshopdropdown.png" alt="Voordeelshop">Voordeelshop</a></li>
+      <li><a href="#"><img src="images/overahdropdown.png" alt="Over AH">Over AH</a></li>
     </ul>
   </details>
         <img src="images/ahlogo.png" alt="Albert Heijn Logo" class="logo">
@@ -92,6 +96,13 @@
    <main>
 
     <button class="theme-toggle" onclick="myFunction()">Verander achtergrondkleur</button>
+
+  <!-- Kleurkiezer -->
+  <div class="color-picker-container">
+    <input type="color" id="colorPicker" class="color-picker">
+    <button id="applyColorBtn" class="apply-color-btn">Pas Kleur Toe</button>
+  </div>
+
     <!-- Banner -->
     <section class="banner">
       <h2 class="invisible-heading">Banner Section</h2>

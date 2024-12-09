@@ -123,7 +123,6 @@ body {
   margin: 0;
 }
 
-
 .menu-items {
   list-style: none;
   padding: 0;
@@ -1388,3 +1387,18 @@ button.theme-toggle1 {
   margin-left: 1em;
 }
 
+
+.color-picker-container {
+  display: flex;
+  align-items: center;
+  gap: 1em; 
+  padding: 1em; 
+}
+
+
+.color-picker {
+  width: 2.5em; 
+  height: 2.5em; 
+  padding: 0;
+  cursor: pointer;
+}

@@ -16,6 +16,42 @@ window.addEventListener('scroll', () => {
   lastScrollY = window.scrollY;
 });
 
+// Haal de kleurkiezer en knop op
+const colorPicker = document.getElementById('colorPicker');
+const applyColorBtn = document.getElementById('applyColorBtn');
+
+// Voeg een event listener toe voor de knop
+applyColorBtn.addEventListener('click', () => {
+  // Haal de geselecteerde kleur op en pas de achtergrondkleur aan
+  document.body.style.backgroundColor = colorPicker.value;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// logo animatie
+const logo = document.querySelector('.logo');
+
+logo.addEventListener('click', function() {
+  logo.style.transition = 'transform 0.3s ease';
+  logo.style.transform = 'translateY(-30px)'; 
+
+
+  setTimeout(() => {
+    logo.style.transform = 'translateY(0)'; 
+  }, 300); 
+});  
+// lesstof week 4 animatie + inleiding programmeren & chatgpt
+
 
 
 // Get the modal
@@ -65,3 +101,4 @@ function myFunction() {
   element.classList.toggle("dark-mode");
 }
 // https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp BRON DARK THEME''
+
